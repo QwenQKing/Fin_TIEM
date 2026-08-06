@@ -1,0 +1,10 @@
+openai
+python-dotenv
+httpx
+tiktoken
+numpy
+networkx
+nano-vectordb
+scikit-learn
+hdbscan
+tqdm
