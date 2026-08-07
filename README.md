@@ -154,4 +154,4 @@ For further questions, please contact: wenjinliu23@outlook.com.
 
 ## Acknowledgement
 
-This repo benefits from [Agent-R1](https://github.com/0russwest0/Agent-R1), [R1-Searcher](https://github.com/RUCAIBox/R1-Searcher), [Graph-R1](https://github.com/LHRLAB/Graph-R1), and [Search-R1](https://github.com/RUCAIBox/R1-Searcher). Thanks for their wonderful works.
+This repo benefits from  . Thanks for their wonderful works.
