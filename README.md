@@ -2,10 +2,11 @@
 
 <div align="center">
 
-[![arXiv]()]()
-[![Homepage]()]()
-[![Dataset]()]()
-[![HF Models]()]()
+[![arXiv](https://img.shields.io/badge/arXiv-2511.01016-b31b1b.svg)]()
+[![Homepage](https://img.shields.io/badge/Homepage-Prompt--R1-black.svg)]()
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-blue.svg?logo=huggingface)]()
+[![HF Models](https://img.shields.io/badge/Dataset-HuggingFace-orange.svg?logo=huggingface)]()
+
 
 
 ### **TIEM**: Temporal Integration of Hypergraph Evidence and Skill Memory for Event-Driven Financial Forecasting
