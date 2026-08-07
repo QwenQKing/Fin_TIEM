@@ -141,3 +141,17 @@ TIME/
 ## Disclaimer
 
 TIEM is an academic research project evaluated offline. Its outputs are not investment advice and should not be used as the sole basis for financial decisions.
+
+## BibTex
+
+If you find this work is helpful for your research, please cite:
+
+```bibtex
+
+```
+
+For further questions, please contact: wenjinliu23@outlook.com.
+
+## Acknowledgement
+
+This repo benefits from [Agent-R1](https://github.com/0russwest0/Agent-R1), [R1-Searcher](https://github.com/RUCAIBox/R1-Searcher), [Graph-R1](https://github.com/LHRLAB/Graph-R1), and [Search-R1](https://github.com/RUCAIBox/R1-Searcher). Thanks for their wonderful works.
