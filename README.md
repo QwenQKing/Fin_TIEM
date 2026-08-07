@@ -20,7 +20,7 @@
 TIEM is a point-in-time-audited framework for event-driven financial forecasting. It combines timestamp-filtered **Event-Evidence Hypergraph (EEH)** retrieval, provenance-tagged **Causal Skill Memory (CSM)**, and **Heterogeneous Evidence-Experience Fusion Reasoning (HEFR)** to predict catalyst outcomes without using information unavailable at the decision time.
 
 <div align="center">
-  <img src="static/images/figure1.jpeg" width="72%" alt="TIEM framework with EEH, HEFR, and CSM"/>
+  <img src="static/images/figure1.jpeg" width="50%" alt="TIEM framework with EEH, HEFR, and CSM"/>
 </div>
 
 **Framework.** A catalyst query is anchored by its target stock, catalyst type, and decision time. EEH retrieves only past evidence, HEFR builds a unified reasoning context, and CSM supplies reusable causal skills learned from already realized outcomes.
