@@ -1,0 +1,1292 @@
+{
+  "meta": {
+    "dataset": "FinPURE-eval",
+    "market": "CN",
+    "source": null,
+    "horizon_days": 5,
+    "split_role": "eval",
+    "label_rule": "binary: positive if 5d-ret>=+0.55%, negative if <=-0.5%, drop (-0.5%,+0.55%) [StockNet deadband]"
+  },
+  "catalysts": [
+    {
+      "catalyst_id": "fresh_000008.SZ_2025-01-18",
+      "stock_id": "000008.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.052632,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000058.SZ_2025-01-18",
+      "stock_id": "000058.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.04625,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000430.SZ_2025-01-21",
+      "stock_id": "000430.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "negative",
+      "fwd_ret": -0.008666,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000591.SZ_2025-01-11",
+      "stock_id": "000591.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-11",
+      "resolve_date": "2025-01-20",
+      "outcome": "positive",
+      "fwd_ret": 0.030879,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000615.SZ_2025-01-21",
+      "stock_id": "000615.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "negative",
+      "fwd_ret": -0.016892,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000635.SZ_2025-01-18",
+      "stock_id": "000635.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.022078,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000657.SZ_2025-01-17",
+      "stock_id": "000657.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.007471,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000691.SZ_2025-01-18",
+      "stock_id": "000691.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.07113,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000692.SZ_2025-01-22",
+      "stock_id": "000692.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.014706,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000782.SZ_2025-01-17",
+      "stock_id": "000782.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.020595,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_000809.SZ_2025-01-21",
+      "stock_id": "000809.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.013245,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_001331.SZ_2025-01-18",
+      "stock_id": "001331.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.015464,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002068.SZ_2025-01-21",
+      "stock_id": "002068.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "negative",
+      "fwd_ret": -0.04627,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002072.SZ_2025-01-18",
+      "stock_id": "002072.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.041037,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002093.SZ_2025-01-17",
+      "stock_id": "002093.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.007843,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002098.SZ_2025-01-22",
+      "stock_id": "002098.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.104478,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002155.SZ_2025-01-22",
+      "stock_id": "002155.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.05364,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002176.SZ_2025-01-14",
+      "stock_id": "002176.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-14",
+      "resolve_date": "2025-01-22",
+      "outcome": "negative",
+      "fwd_ret": -0.026243,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002192.SZ_2025-01-23",
+      "stock_id": "002192.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.032914,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002542.SZ_2025-01-21",
+      "stock_id": "002542.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.021084,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002560.SZ_2025-01-18",
+      "stock_id": "002560.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.040816,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002639.SZ_2025-01-18",
+      "stock_id": "002639.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.019006,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002735.SZ_2025-01-18",
+      "stock_id": "002735.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.01,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002767.SZ_2025-01-16",
+      "stock_id": "002767.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-16",
+      "resolve_date": "2025-01-24",
+      "outcome": "negative",
+      "fwd_ret": -0.106464,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002857.SZ_2025-01-22",
+      "stock_id": "002857.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.042813,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002909.SZ_2025-01-18",
+      "stock_id": "002909.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.007782,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002923.SZ_2025-01-23",
+      "stock_id": "002923.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "negative",
+      "fwd_ret": -0.020932,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_002943.SZ_2025-01-21",
+      "stock_id": "002943.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.052106,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300030.SZ_2025-01-17",
+      "stock_id": "300030.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.035461,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300048.SZ_2025-01-22",
+      "stock_id": "300048.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.03252,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300074.SZ_2025-01-21",
+      "stock_id": "300074.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.09893,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300081.SZ_2025-01-22",
+      "stock_id": "300081.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.155689,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300118.SZ_2025-01-17",
+      "stock_id": "300118.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.042743,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300168.SZ_2025-01-17",
+      "stock_id": "300168.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.012483,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300210.SZ_2025-01-23",
+      "stock_id": "300210.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.120778,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300246.SZ_2025-01-17",
+      "stock_id": "300246.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.007874,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300296.SZ_2025-01-23",
+      "stock_id": "300296.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.075286,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300311.SZ_2025-01-17",
+      "stock_id": "300311.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.023891,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300340.SZ_2025-01-23",
+      "stock_id": "300340.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.063941,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300344.SZ_2025-01-17",
+      "stock_id": "300344.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.288265,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300368.SZ_2025-01-21",
+      "stock_id": "300368.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.028369,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300374.SZ_2025-01-20",
+      "stock_id": "300374.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-20",
+      "resolve_date": "2025-02-05",
+      "outcome": "negative",
+      "fwd_ret": -0.018757,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300398.SZ_2025-01-23",
+      "stock_id": "300398.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.033001,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300412.SZ_2025-01-21",
+      "stock_id": "300412.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.056566,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300418.SZ_2025-01-23",
+      "stock_id": "300418.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.189011,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300432.SZ_2025-01-21",
+      "stock_id": "300432.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.082226,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300447.SZ_2025-01-17",
+      "stock_id": "300447.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.010492,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300492.SZ_2025-01-23",
+      "stock_id": "300492.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.04337,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300503.SZ_2025-01-11",
+      "stock_id": "300503.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-11",
+      "resolve_date": "2025-01-20",
+      "outcome": "positive",
+      "fwd_ret": 0.132911,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300509.SZ_2025-01-21",
+      "stock_id": "300509.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.03736,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300513.SZ_2025-01-23",
+      "stock_id": "300513.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.076834,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300515.SZ_2025-01-16",
+      "stock_id": "300515.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-16",
+      "resolve_date": "2025-01-24",
+      "outcome": "positive",
+      "fwd_ret": 0.030366,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300571.SZ_2025-01-23",
+      "stock_id": "300571.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.232319,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300593.SZ_2025-01-17",
+      "stock_id": "300593.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.066231,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300647.SZ_2025-01-18",
+      "stock_id": "300647.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.051447,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300668.SZ_2025-01-20",
+      "stock_id": "300668.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-20",
+      "resolve_date": "2025-02-05",
+      "outcome": "negative",
+      "fwd_ret": -0.051244,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300715.SZ_2025-01-23",
+      "stock_id": "300715.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "negative",
+      "fwd_ret": -0.032184,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300732.SZ_2025-01-21",
+      "stock_id": "300732.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.044944,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300736.SZ_2025-01-14",
+      "stock_id": "300736.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-14",
+      "resolve_date": "2025-01-22",
+      "outcome": "negative",
+      "fwd_ret": -0.012876,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300782.SZ_2025-01-17",
+      "stock_id": "300782.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.043866,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300846.SZ_2025-01-23",
+      "stock_id": "300846.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.705295,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300907.SZ_2025-01-23",
+      "stock_id": "300907.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.015329,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_300977.SZ_2025-01-20",
+      "stock_id": "300977.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-20",
+      "resolve_date": "2025-02-05",
+      "outcome": "positive",
+      "fwd_ret": 0.04401,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301000.SZ_2025-01-15",
+      "stock_id": "301000.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-15",
+      "resolve_date": "2025-01-23",
+      "outcome": "positive",
+      "fwd_ret": 0.128197,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301012.SZ_2025-01-22",
+      "stock_id": "301012.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "negative",
+      "fwd_ret": -0.042988,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301051.SZ_2025-01-15",
+      "stock_id": "301051.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-15",
+      "resolve_date": "2025-01-23",
+      "outcome": "positive",
+      "fwd_ret": 0.010459,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301212.SZ_2025-01-21",
+      "stock_id": "301212.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.016167,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301238.SZ_2025-01-22",
+      "stock_id": "301238.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.058179,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301358.SZ_2025-01-21",
+      "stock_id": "301358.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "negative",
+      "fwd_ret": -0.032575,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301367.SZ_2025-01-18",
+      "stock_id": "301367.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.026588,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301526.SZ_2025-01-21",
+      "stock_id": "301526.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.037037,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_301555.SZ_2025-01-20",
+      "stock_id": "301555.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-20",
+      "resolve_date": "2025-02-05",
+      "outcome": "negative",
+      "fwd_ret": -0.005096,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600026.SH_2025-01-10",
+      "stock_id": "600026.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-10",
+      "resolve_date": "2025-01-20",
+      "outcome": "positive",
+      "fwd_ret": 0.017572,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600076.SH_2025-01-16",
+      "stock_id": "600076.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-16",
+      "resolve_date": "2025-01-24",
+      "outcome": "negative",
+      "fwd_ret": -0.030612,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600094.SH_2025-01-18",
+      "stock_id": "600094.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.04375,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600107.SH_2025-01-18",
+      "stock_id": "600107.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.00939,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600171.SH_2025-01-22",
+      "stock_id": "600171.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.030262,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600192.SH_2025-01-17",
+      "stock_id": "600192.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.04386,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600206.SH_2025-01-18",
+      "stock_id": "600206.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.106306,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600266.SH_2025-01-18",
+      "stock_id": "600266.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.026915,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600313.SH_2025-01-15",
+      "stock_id": "600313.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-15",
+      "resolve_date": "2025-01-23",
+      "outcome": "negative",
+      "fwd_ret": -0.031201,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600335.SH_2025-01-21",
+      "stock_id": "600335.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.045455,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600446.SH_2025-01-14",
+      "stock_id": "600446.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-14",
+      "resolve_date": "2025-02-06",
+      "outcome": "negative",
+      "fwd_ret": -0.111681,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600538.SH_2025-01-17",
+      "stock_id": "600538.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.041905,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600594.SH_2025-01-18",
+      "stock_id": "600594.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.020231,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600708.SH_2025-01-18",
+      "stock_id": "600708.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.090909,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600728.SH_2025-01-17",
+      "stock_id": "600728.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.017978,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_600844.SH_2025-01-17",
+      "stock_id": "600844.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.023346,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_601096.SH_2025-01-23",
+      "stock_id": "601096.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.016827,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_601111.SH_2025-01-18",
+      "stock_id": "601111.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.015789,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_601360.SH_2025-01-18",
+      "stock_id": "601360.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.111111,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_601828.SH_2025-01-18",
+      "stock_id": "601828.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.052459,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_601908.SH_2025-01-18",
+      "stock_id": "601908.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.047445,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603087.SH_2025-01-21",
+      "stock_id": "603087.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.018672,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603126.SH_2025-01-22",
+      "stock_id": "603126.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.033784,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603168.SH_2025-01-18",
+      "stock_id": "603168.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.012012,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603208.SH_2025-01-18",
+      "stock_id": "603208.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.04195,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603315.SH_2025-01-23",
+      "stock_id": "603315.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.057711,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603359.SH_2025-01-18",
+      "stock_id": "603359.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.019565,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603392.SH_2025-01-16",
+      "stock_id": "603392.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-16",
+      "resolve_date": "2025-01-24",
+      "outcome": "negative",
+      "fwd_ret": -0.014822,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603496.SH_2025-01-18",
+      "stock_id": "603496.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.018742,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603612.SH_2025-01-21",
+      "stock_id": "603612.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.02197,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603639.SH_2025-01-23",
+      "stock_id": "603639.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "positive",
+      "fwd_ret": 0.01249,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603655.SH_2025-01-21",
+      "stock_id": "603655.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.025619,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603679.SH_2025-01-18",
+      "stock_id": "603679.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.014388,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603682.SH_2025-01-18",
+      "stock_id": "603682.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.237097,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603918.SH_2025-01-14",
+      "stock_id": "603918.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-14",
+      "resolve_date": "2025-01-22",
+      "outcome": "positive",
+      "fwd_ret": 0.019786,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_603978.SH_2025-01-14",
+      "stock_id": "603978.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-14",
+      "resolve_date": "2025-01-22",
+      "outcome": "negative",
+      "fwd_ret": -0.04539,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_605138.SH_2025-01-18",
+      "stock_id": "605138.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.010889,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_605166.SH_2025-01-23",
+      "stock_id": "605166.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-23",
+      "resolve_date": "2025-02-10",
+      "outcome": "negative",
+      "fwd_ret": -0.016551,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688039.SH_2025-01-18",
+      "stock_id": "688039.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.070031,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688062.SH_2025-01-18",
+      "stock_id": "688062.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.097688,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688081.SH_2025-01-18",
+      "stock_id": "688081.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.047472,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688156.SH_2025-01-18",
+      "stock_id": "688156.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.0261,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688167.SH_2025-01-22",
+      "stock_id": "688167.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.195261,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688172.SH_2025-01-16",
+      "stock_id": "688172.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-16",
+      "resolve_date": "2025-01-24",
+      "outcome": "positive",
+      "fwd_ret": 0.008564,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688211.SH_2025-01-17",
+      "stock_id": "688211.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.01296,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688286.SH_2025-01-18",
+      "stock_id": "688286.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.053593,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688308.SH_2025-01-21",
+      "stock_id": "688308.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.044179,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688336.SH_2025-01-17",
+      "stock_id": "688336.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.011824,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688365.SH_2025-01-22",
+      "stock_id": "688365.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.215461,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688410.SH_2025-01-20",
+      "stock_id": "688410.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-20",
+      "resolve_date": "2025-02-05",
+      "outcome": "negative",
+      "fwd_ret": -0.068266,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688433.SH_2025-01-17",
+      "stock_id": "688433.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-17",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.01281,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688458.SH_2025-01-22",
+      "stock_id": "688458.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-22",
+      "resolve_date": "2025-02-07",
+      "outcome": "positive",
+      "fwd_ret": 0.062104,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688573.SH_2025-01-18",
+      "stock_id": "688573.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "positive",
+      "fwd_ret": 0.050616,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688596.SH_2025-01-14",
+      "stock_id": "688596.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-14",
+      "resolve_date": "2025-01-22",
+      "outcome": "positive",
+      "fwd_ret": 0.026544,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688606.SH_2025-01-21",
+      "stock_id": "688606.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-21",
+      "resolve_date": "2025-02-06",
+      "outcome": "positive",
+      "fwd_ret": 0.016542,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "fresh_688609.SH_2025-01-18",
+      "stock_id": "688609.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2025-01-18",
+      "resolve_date": "2025-01-27",
+      "outcome": "negative",
+      "fwd_ret": -0.007114,
+      "horizon_days": 5
+    }
+  ]
+}

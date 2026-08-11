@@ -1,0 +1,1292 @@
+{
+  "meta": {
+    "dataset": "EDT_ood-eval",
+    "market": "US",
+    "source": "TradeTheEvent ACL2021",
+    "horizon_days": 3,
+    "split_role": "eval",
+    "label_rule": "binary: positive if 3d-ret>=+0.55%, negative if <=-0.5%, drop (-0.5%,+0.55%) [StockNet deadband]"
+  },
+  "catalysts": [
+    {
+      "catalyst_id": "EDT_ACH_2021-02-04",
+      "stock_id": "ACH.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-04 08:00:00",
+      "resolve_date": "2021-02-08",
+      "outcome": "positive",
+      "fwd_ret": 0.069393,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ACR_2021-02-16",
+      "stock_id": "ACR.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-16 16:16:00",
+      "resolve_date": "2021-02-19",
+      "outcome": "negative",
+      "fwd_ret": -0.076923,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ADI_2020-12-01",
+      "stock_id": "ADI.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-01 10:20:00",
+      "resolve_date": "2020-12-03",
+      "outcome": "negative",
+      "fwd_ret": -0.006611,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ADUS_2020-12-04",
+      "stock_id": "ADUS.US",
+      "catalyst_type": "ma",
+      "decision_time": "2020-12-04 08:25:00",
+      "resolve_date": "2020-12-08",
+      "outcome": "positive",
+      "fwd_ret": 0.034253,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_AKAM_2020-10-06",
+      "stock_id": "AKAM.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-06 16:27:00",
+      "resolve_date": "2020-10-09",
+      "outcome": "positive",
+      "fwd_ret": 0.055782,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_AME_2020-10-14",
+      "stock_id": "AME.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-14 08:00:00",
+      "resolve_date": "2020-10-16",
+      "outcome": "positive",
+      "fwd_ret": 0.038182,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_AMPE_2021-01-14",
+      "stock_id": "AMPE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-14 09:15:00",
+      "resolve_date": "2021-01-19",
+      "outcome": "positive",
+      "fwd_ret": 0.098592,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_AM_2021-03-31",
+      "stock_id": "AM.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-31 08:00:00",
+      "resolve_date": "2021-04-05",
+      "outcome": "positive",
+      "fwd_ret": 0.028409,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ANTE_2020-09-30",
+      "stock_id": "ANTE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-30 07:00:00",
+      "resolve_date": "2020-10-02",
+      "outcome": "negative",
+      "fwd_ret": -0.11978,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ASC_2021-02-03",
+      "stock_id": "ASC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-03 16:15:00",
+      "resolve_date": "2021-02-05",
+      "outcome": "positive",
+      "fwd_ret": 0.072886,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_AVTR_2021-01-21",
+      "stock_id": "AVTR.US",
+      "catalyst_type": "rating",
+      "decision_time": "2021-01-21 16:05:00",
+      "resolve_date": "2021-01-25",
+      "outcome": "positive",
+      "fwd_ret": 0.007882,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_AVY_2021-01-14",
+      "stock_id": "AVY.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-14 15:51:00",
+      "resolve_date": "2021-01-19",
+      "outcome": "negative",
+      "fwd_ret": -0.014799,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_AWRE_2020-10-27",
+      "stock_id": "AWRE.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-27 16:05:00",
+      "resolve_date": "2020-10-30",
+      "outcome": "positive",
+      "fwd_ret": 0.038168,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BAC_2021-04-09",
+      "stock_id": "BAC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-09 08:30:00",
+      "resolve_date": "2021-04-13",
+      "outcome": "negative",
+      "fwd_ret": -0.013781,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BAK_2021-03-10",
+      "stock_id": "BAK.US",
+      "catalyst_type": "rating",
+      "decision_time": "2021-03-10 23:15:00",
+      "resolve_date": "2021-03-15",
+      "outcome": "positive",
+      "fwd_ret": 0.032581,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BBQ_2020-10-12",
+      "stock_id": "BBQ.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-12 09:00:00",
+      "resolve_date": "2020-10-14",
+      "outcome": "negative",
+      "fwd_ret": -0.011655,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BE_2021-03-03",
+      "stock_id": "BE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-03 09:00:00",
+      "resolve_date": "2021-03-05",
+      "outcome": "negative",
+      "fwd_ret": -0.07603,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BFC_2020-10-20",
+      "stock_id": "BFC.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-20 16:01:00",
+      "resolve_date": "2020-10-23",
+      "outcome": "positive",
+      "fwd_ret": 0.013156,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BKNG_2021-04-26",
+      "stock_id": "BKNG.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-26 11:01:00",
+      "resolve_date": "2021-04-28",
+      "outcome": "positive",
+      "fwd_ret": 0.030244,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BORR_2020-12-28",
+      "stock_id": "BORR.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-28 06:03:00",
+      "resolve_date": "2020-12-30",
+      "outcome": "negative",
+      "fwd_ret": -0.087049,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BSTC_2020-10-20",
+      "stock_id": "BSTC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-20 15:07:00",
+      "resolve_date": "2020-10-22",
+      "outcome": "negative",
+      "fwd_ret": -0.005748,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BSX_2020-11-09",
+      "stock_id": "BSX.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-09 08:40:00",
+      "resolve_date": "2020-11-11",
+      "outcome": "negative",
+      "fwd_ret": -0.007958,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_BYND_2021-03-23",
+      "stock_id": "BYND.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2021-03-23 12:00:00",
+      "resolve_date": "2021-03-25",
+      "outcome": "negative",
+      "fwd_ret": -0.051492,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_CC_2020-11-17",
+      "stock_id": "CC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-17 08:30:00",
+      "resolve_date": "2020-11-19",
+      "outcome": "positive",
+      "fwd_ret": 0.036451,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_CL_2020-11-11",
+      "stock_id": "CL.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-11 12:15:00",
+      "resolve_date": "2020-11-13",
+      "outcome": "positive",
+      "fwd_ret": 0.006188,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_CNC_2020-10-26",
+      "stock_id": "CNC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-26 07:00:00",
+      "resolve_date": "2020-10-28",
+      "outcome": "negative",
+      "fwd_ret": -0.0873,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_CNC_2020-12-04",
+      "stock_id": "CNC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-04 07:00:00",
+      "resolve_date": "2020-12-08",
+      "outcome": "positive",
+      "fwd_ret": 0.014304,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_CPA_2020-12-15",
+      "stock_id": "CPA.US",
+      "catalyst_type": "rating",
+      "decision_time": "2020-12-15 19:46:00",
+      "resolve_date": "2020-12-18",
+      "outcome": "negative",
+      "fwd_ret": -0.058188,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_CSCO_2020-10-19",
+      "stock_id": "CSCO.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-19 12:02:00",
+      "resolve_date": "2020-10-21",
+      "outcome": "negative",
+      "fwd_ret": -0.017149,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_CUZ_2021-02-11",
+      "stock_id": "CUZ.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-11 16:15:00",
+      "resolve_date": "2021-02-17",
+      "outcome": "negative",
+      "fwd_ret": -0.015864,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_DD_2020-11-25",
+      "stock_id": "DD.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-25 14:00:00",
+      "resolve_date": "2020-11-30",
+      "outcome": "negative",
+      "fwd_ret": -0.017636,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_DISCA_2020-11-24",
+      "stock_id": "DISCA.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-24 10:07:00",
+      "resolve_date": "2020-11-27",
+      "outcome": "positive",
+      "fwd_ret": 0.010666,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_DISH_2021-02-22",
+      "stock_id": "DISH.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2021-02-22 06:05:00",
+      "resolve_date": "2021-02-24",
+      "outcome": "negative",
+      "fwd_ret": -0.083212,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_DOV_2020-11-17",
+      "stock_id": "DOV.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-17 16:15:00",
+      "resolve_date": "2020-11-20",
+      "outcome": "negative",
+      "fwd_ret": -0.015785,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_DTF_2021-01-08",
+      "stock_id": "DTF.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-08 08:00:00",
+      "resolve_date": "2021-01-12",
+      "outcome": "negative",
+      "fwd_ret": -0.008861,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_DUK_2020-10-01",
+      "stock_id": "DUK.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-01 12:11:00",
+      "resolve_date": "2020-10-05",
+      "outcome": "positive",
+      "fwd_ret": 0.024727,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ED_2020-12-07",
+      "stock_id": "ED.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-07 10:00:00",
+      "resolve_date": "2020-12-09",
+      "outcome": "negative",
+      "fwd_ret": -0.016558,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_EVH_2021-01-13",
+      "stock_id": "EVH.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-13 07:00:00",
+      "resolve_date": "2021-01-15",
+      "outcome": "positive",
+      "fwd_ret": 0.020797,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_FE_2020-11-30",
+      "stock_id": "FE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-30 09:20:00",
+      "resolve_date": "2020-12-02",
+      "outcome": "positive",
+      "fwd_ret": 0.01827,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_FICO_2020-10-29",
+      "stock_id": "FICO.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-29 16:15:00",
+      "resolve_date": "2020-11-03",
+      "outcome": "positive",
+      "fwd_ret": 0.025987,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_FORR_2020-10-27",
+      "stock_id": "FORR.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-27 09:30:00",
+      "resolve_date": "2020-10-29",
+      "outcome": "positive",
+      "fwd_ret": 0.006109,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_FTFT_2021-04-01",
+      "stock_id": "FTFT.US",
+      "catalyst_type": "ma",
+      "decision_time": "2021-04-01 07:00:00",
+      "resolve_date": "2021-04-06",
+      "outcome": "negative",
+      "fwd_ret": -0.112593,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_FUSN_2021-02-23",
+      "stock_id": "FUSN.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-23 16:30:00",
+      "resolve_date": "2021-02-26",
+      "outcome": "negative",
+      "fwd_ret": -0.005957,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_GHG_2021-04-14",
+      "stock_id": "GHG.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2021-04-14 18:50:00",
+      "resolve_date": "2021-04-19",
+      "outcome": "negative",
+      "fwd_ret": -0.007669,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_GLQ_2020-09-30",
+      "stock_id": "GLQ.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-30 06:00:00",
+      "resolve_date": "2020-10-02",
+      "outcome": "positive",
+      "fwd_ret": 0.018767,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_GRA_2021-02-09",
+      "stock_id": "GRA.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-09 10:24:00",
+      "resolve_date": "2021-02-11",
+      "outcome": "negative",
+      "fwd_ret": -0.020837,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_GRFS_2020-12-17",
+      "stock_id": "GRFS.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-17 12:45:00",
+      "resolve_date": "2020-12-21",
+      "outcome": "negative",
+      "fwd_ret": -0.026972,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_GROW_2021-02-19",
+      "stock_id": "GROW.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-19 09:30:00",
+      "resolve_date": "2021-02-23",
+      "outcome": "negative",
+      "fwd_ret": -0.109459,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_G_2021-01-20",
+      "stock_id": "G.US",
+      "catalyst_type": "ma",
+      "decision_time": "2021-01-20 19:00:00",
+      "resolve_date": "2021-01-25",
+      "outcome": "negative",
+      "fwd_ret": -0.033066,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_HRTX_2021-01-21",
+      "stock_id": "HRTX.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-21 08:30:00",
+      "resolve_date": "2021-01-25",
+      "outcome": "positive",
+      "fwd_ret": 0.007808,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_HTBX_2020-10-14",
+      "stock_id": "HTBX.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-14 09:31:00",
+      "resolve_date": "2020-10-16",
+      "outcome": "negative",
+      "fwd_ret": -0.077098,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_HUN_2020-11-02",
+      "stock_id": "HUN.US",
+      "catalyst_type": "rating",
+      "decision_time": "2020-11-02 16:05:00",
+      "resolve_date": "2020-11-04",
+      "outcome": "negative",
+      "fwd_ret": -0.057861,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_IDEX_2021-02-22",
+      "stock_id": "IDEX.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-22 08:18:00",
+      "resolve_date": "2021-02-24",
+      "outcome": "negative",
+      "fwd_ret": -0.106061,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ILMN_2021-04-06",
+      "stock_id": "ILMN.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-06 09:31:00",
+      "resolve_date": "2021-04-08",
+      "outcome": "negative",
+      "fwd_ret": -0.038714,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_INVO_2021-04-26",
+      "stock_id": "INVO.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-26 16:05:00",
+      "resolve_date": "2021-04-28",
+      "outcome": "negative",
+      "fwd_ret": -0.026066,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ITQRU_2021-02-03",
+      "stock_id": "ITQRU.US",
+      "catalyst_type": "ma",
+      "decision_time": "2021-02-03 23:07:00",
+      "resolve_date": "2021-02-08",
+      "outcome": "positive",
+      "fwd_ret": 0.009148,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_IT_2021-02-02",
+      "stock_id": "IT.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-02 09:30:00",
+      "resolve_date": "2021-02-04",
+      "outcome": "positive",
+      "fwd_ret": 0.052676,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_JKHY_2021-01-27",
+      "stock_id": "JKHY.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-27 07:59:00",
+      "resolve_date": "2021-01-29",
+      "outcome": "negative",
+      "fwd_ret": -0.059744,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_JNJ_2021-03-08",
+      "stock_id": "JNJ.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-08 04:00:00",
+      "resolve_date": "2021-03-10",
+      "outcome": "positive",
+      "fwd_ret": 0.020436,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_KALA_2020-12-22",
+      "stock_id": "KALA.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-22 07:00:00",
+      "resolve_date": "2020-12-24",
+      "outcome": "positive",
+      "fwd_ret": 0.013158,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_KALA_2021-04-08",
+      "stock_id": "KALA.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-08 08:03:00",
+      "resolve_date": "2021-04-12",
+      "outcome": "negative",
+      "fwd_ret": -0.051105,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_KRP_2021-04-23",
+      "stock_id": "KRP.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-23 16:54:00",
+      "resolve_date": "2021-04-27",
+      "outcome": "positive",
+      "fwd_ret": 0.039698,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_LEA_2021-03-25",
+      "stock_id": "LEA.US",
+      "catalyst_type": "ma",
+      "decision_time": "2021-03-25 08:00:00",
+      "resolve_date": "2021-03-29",
+      "outcome": "positive",
+      "fwd_ret": 0.029627,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_LIVE_2020-10-13",
+      "stock_id": "LIVE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-13 19:12:00",
+      "resolve_date": "2020-10-16",
+      "outcome": "positive",
+      "fwd_ret": 0.032646,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_LLY_2020-12-03",
+      "stock_id": "LLY.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-03 08:35:00",
+      "resolve_date": "2020-12-07",
+      "outcome": "positive",
+      "fwd_ret": 0.01386,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MATX_2020-10-29",
+      "stock_id": "MATX.US",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-29 17:48:00",
+      "resolve_date": "2020-11-03",
+      "outcome": "positive",
+      "fwd_ret": 0.089309,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MDP_2021-01-05",
+      "stock_id": "MDP.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-05 11:15:00",
+      "resolve_date": "2021-01-07",
+      "outcome": "negative",
+      "fwd_ret": -0.017324,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MIK_2020-12-08",
+      "stock_id": "MIK.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-08 09:00:00",
+      "resolve_date": "2020-12-10",
+      "outcome": "positive",
+      "fwd_ret": 0.077051,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MMP_2020-12-02",
+      "stock_id": "MMP.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-02 16:56:00",
+      "resolve_date": "2020-12-04",
+      "outcome": "positive",
+      "fwd_ret": 0.055876,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MSFT_2021-02-17",
+      "stock_id": "MSFT.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-17 08:37:00",
+      "resolve_date": "2021-02-19",
+      "outcome": "negative",
+      "fwd_ret": -0.008323,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MSFT_2021-03-25",
+      "stock_id": "MSFT.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-25 11:30:00",
+      "resolve_date": "2021-03-29",
+      "outcome": "positive",
+      "fwd_ret": 0.0106,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MSFT_2021-04-13",
+      "stock_id": "MSFT.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-13 08:00:00",
+      "resolve_date": "2021-04-15",
+      "outcome": "positive",
+      "fwd_ret": 0.015979,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_MTN_2021-03-11",
+      "stock_id": "MTN.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2021-03-11 16:05:00",
+      "resolve_date": "2021-03-15",
+      "outcome": "negative",
+      "fwd_ret": -0.048301,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_NCTY_2021-03-22",
+      "stock_id": "NCTY.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-22 04:00:00",
+      "resolve_date": "2021-03-24",
+      "outcome": "negative",
+      "fwd_ret": -0.323878,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_NEN_2021-03-03",
+      "stock_id": "NEN.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-03 18:25:00",
+      "resolve_date": "2021-03-08",
+      "outcome": "positive",
+      "fwd_ret": 0.019033,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_NEP_2021-04-19",
+      "stock_id": "NEP.US",
+      "catalyst_type": "ma",
+      "decision_time": "2021-04-19 07:30:00",
+      "resolve_date": "2021-04-21",
+      "outcome": "negative",
+      "fwd_ret": -0.046,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_NOC_2020-12-16",
+      "stock_id": "NOC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-16 16:45:00",
+      "resolve_date": "2020-12-21",
+      "outcome": "negative",
+      "fwd_ret": -0.016532,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_NVR_2021-04-21",
+      "stock_id": "NVR.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2021-04-21 09:00:00",
+      "resolve_date": "2021-04-23",
+      "outcome": "positive",
+      "fwd_ret": 0.009319,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_NXTC_2020-11-10",
+      "stock_id": "NXTC.US",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-11-10 17:17:00",
+      "resolve_date": "2020-11-12",
+      "outcome": "negative",
+      "fwd_ret": -0.014967,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_PANL_2020-11-06",
+      "stock_id": "PANL.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-06 08:00:00",
+      "resolve_date": "2020-11-10",
+      "outcome": "positive",
+      "fwd_ret": 0.104894,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_PFGC_2021-04-16",
+      "stock_id": "PFGC.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-16 14:52:00",
+      "resolve_date": "2021-04-20",
+      "outcome": "negative",
+      "fwd_ret": -0.053871,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_PIC_2020-10-16",
+      "stock_id": "PIC.US",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-10-16 21:52:00",
+      "resolve_date": "2020-10-21",
+      "outcome": "negative",
+      "fwd_ret": -0.053221,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_PLT_2020-11-02",
+      "stock_id": "PLT.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-02 10:00:00",
+      "resolve_date": "2020-11-04",
+      "outcome": "positive",
+      "fwd_ret": 0.05637,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_PRU_2021-02-09",
+      "stock_id": "PRU.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-09 10:06:00",
+      "resolve_date": "2021-02-11",
+      "outcome": "positive",
+      "fwd_ret": 0.006099,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_RDI_2021-04-23",
+      "stock_id": "RDI.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-23 10:46:00",
+      "resolve_date": "2021-04-27",
+      "outcome": "negative",
+      "fwd_ret": -0.01642,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_RDY_2021-01-27",
+      "stock_id": "RDY.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-27 14:12:00",
+      "resolve_date": "2021-01-29",
+      "outcome": "negative",
+      "fwd_ret": -0.06355,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_REXR_2020-12-04",
+      "stock_id": "REXR.US",
+      "catalyst_type": "ma",
+      "decision_time": "2020-12-04 07:00:00",
+      "resolve_date": "2020-12-08",
+      "outcome": "negative",
+      "fwd_ret": -0.005225,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_RILY_2021-01-11",
+      "stock_id": "RILY.US",
+      "catalyst_type": "rating",
+      "decision_time": "2021-01-11 06:30:00",
+      "resolve_date": "2021-01-13",
+      "outcome": "positive",
+      "fwd_ret": 0.152516,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_RNWK_2020-11-03",
+      "stock_id": "RNWK.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-03 16:01:00",
+      "resolve_date": "2020-11-05",
+      "outcome": "negative",
+      "fwd_ret": -0.213836,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ROK_2020-11-05",
+      "stock_id": "ROK.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-05 08:30:00",
+      "resolve_date": "2020-11-09",
+      "outcome": "positive",
+      "fwd_ret": 0.04378,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ROOT_2021-03-24",
+      "stock_id": "ROOT.US",
+      "catalyst_type": "regulatory",
+      "decision_time": "2021-03-24 22:36:00",
+      "resolve_date": "2021-03-29",
+      "outcome": "positive",
+      "fwd_ret": 0.0496,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_RTX_2021-01-13",
+      "stock_id": "RTX.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-13 11:35:00",
+      "resolve_date": "2021-01-15",
+      "outcome": "negative",
+      "fwd_ret": -0.014708,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SAP_2020-11-13",
+      "stock_id": "SAP.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-13 18:19:00",
+      "resolve_date": "2020-11-17",
+      "outcome": "negative",
+      "fwd_ret": -0.028355,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SAR_2021-04-05",
+      "stock_id": "SAR.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-05 19:14:00",
+      "resolve_date": "2021-04-08",
+      "outcome": "negative",
+      "fwd_ret": -0.044697,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SCL_2020-11-30",
+      "stock_id": "SCL.US",
+      "catalyst_type": "rating",
+      "decision_time": "2020-11-30 16:15:00",
+      "resolve_date": "2020-12-02",
+      "outcome": "negative",
+      "fwd_ret": -0.020439,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SFIX_2020-12-08",
+      "stock_id": "SFIX.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-08 10:45:00",
+      "resolve_date": "2020-12-10",
+      "outcome": "positive",
+      "fwd_ret": 0.147632,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SHAK_2020-11-18",
+      "stock_id": "SHAK.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-18 17:06:00",
+      "resolve_date": "2020-11-20",
+      "outcome": "negative",
+      "fwd_ret": -0.038096,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SHOO_2021-03-23",
+      "stock_id": "SHOO.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-23 10:31:00",
+      "resolve_date": "2021-03-25",
+      "outcome": "positive",
+      "fwd_ret": 0.01042,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SIG_2021-01-28",
+      "stock_id": "SIG.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-28 17:59:00",
+      "resolve_date": "2021-02-01",
+      "outcome": "positive",
+      "fwd_ret": 0.111111,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SJM_2021-01-04",
+      "stock_id": "SJM.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-04 10:18:00",
+      "resolve_date": "2021-01-06",
+      "outcome": "positive",
+      "fwd_ret": 0.018235,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SMCI_2021-04-07",
+      "stock_id": "SMCI.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-07 08:53:00",
+      "resolve_date": "2021-04-09",
+      "outcome": "positive",
+      "fwd_ret": 0.006851,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SMLP_2020-12-24",
+      "stock_id": "SMLP.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-24 06:45:00",
+      "resolve_date": "2020-12-29",
+      "outcome": "negative",
+      "fwd_ret": -0.019608,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SNCA_2020-12-17",
+      "stock_id": "SNCA.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-17 22:51:00",
+      "resolve_date": "2020-12-22",
+      "outcome": "negative",
+      "fwd_ret": -0.199457,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SONM_2020-12-22",
+      "stock_id": "SONM.US",
+      "catalyst_type": "rating",
+      "decision_time": "2020-12-22 07:30:00",
+      "resolve_date": "2020-12-24",
+      "outcome": "positive",
+      "fwd_ret": 0.009375,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SRE_2021-02-01",
+      "stock_id": "SRE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-01 16:15:00",
+      "resolve_date": "2021-02-04",
+      "outcome": "positive",
+      "fwd_ret": 0.009044,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SR_2020-11-04",
+      "stock_id": "SR.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-11-04 13:08:00",
+      "resolve_date": "2020-11-06",
+      "outcome": "negative",
+      "fwd_ret": -0.025466,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_STAR_2020-11-18",
+      "stock_id": "STAR.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-18 16:30:00",
+      "resolve_date": "2020-11-23",
+      "outcome": "positive",
+      "fwd_ret": 0.03793,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_SVM_2021-04-28",
+      "stock_id": "SVM.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-28 17:05:00",
+      "resolve_date": "2021-04-30",
+      "outcome": "negative",
+      "fwd_ret": -0.025735,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TCS_2020-11-30",
+      "stock_id": "TCS.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-30 12:27:00",
+      "resolve_date": "2020-12-02",
+      "outcome": "positive",
+      "fwd_ret": 0.006356,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TECH_2021-03-26",
+      "stock_id": "TECH.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-03-26 07:00:00",
+      "resolve_date": "2021-03-30",
+      "outcome": "negative",
+      "fwd_ret": -0.011383,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TGT_2020-11-30",
+      "stock_id": "TGT.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-30 17:30:00",
+      "resolve_date": "2020-12-02",
+      "outcome": "negative",
+      "fwd_ret": -0.015763,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_THO_2020-11-02",
+      "stock_id": "THO.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-02 06:30:00",
+      "resolve_date": "2020-11-04",
+      "outcome": "positive",
+      "fwd_ret": 0.032674,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TILE_2021-01-26",
+      "stock_id": "TILE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-26 10:30:00",
+      "resolve_date": "2021-01-28",
+      "outcome": "positive",
+      "fwd_ret": 0.01629,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TILE_2021-01-27",
+      "stock_id": "TILE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-01-27 08:38:00",
+      "resolve_date": "2021-01-29",
+      "outcome": "negative",
+      "fwd_ret": -0.061682,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TME_2020-11-02",
+      "stock_id": "TME.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-02 21:00:00",
+      "resolve_date": "2020-11-05",
+      "outcome": "positive",
+      "fwd_ret": 0.057627,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TME_2020-12-20",
+      "stock_id": "TME.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-20 22:27:00",
+      "resolve_date": "2020-12-23",
+      "outcome": "positive",
+      "fwd_ret": 0.008574,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TREE_2020-12-02",
+      "stock_id": "TREE.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-02 08:15:00",
+      "resolve_date": "2020-12-04",
+      "outcome": "positive",
+      "fwd_ret": 0.007899,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_TRI_2020-10-28",
+      "stock_id": "TRI.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-28 13:54:00",
+      "resolve_date": "2020-10-30",
+      "outcome": "negative",
+      "fwd_ret": -0.005366,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_UIS_2020-11-12",
+      "stock_id": "UIS.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-12 07:58:00",
+      "resolve_date": "2020-11-16",
+      "outcome": "positive",
+      "fwd_ret": 0.014663,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_USB_2020-09-30",
+      "stock_id": "USB.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-09-30 10:00:00",
+      "resolve_date": "2020-10-02",
+      "outcome": "positive",
+      "fwd_ret": 0.036077,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_VER_2021-02-23",
+      "stock_id": "VER.US",
+      "catalyst_type": "rating",
+      "decision_time": "2021-02-23 16:15:00",
+      "resolve_date": "2021-02-25",
+      "outcome": "positive",
+      "fwd_ret": 0.019567,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_VOXX_2020-10-13",
+      "stock_id": "VOXX.US",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-13 16:01:00",
+      "resolve_date": "2020-10-15",
+      "outcome": "positive",
+      "fwd_ret": 0.274419,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_VRRM_2021-02-16",
+      "stock_id": "VRRM.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-02-16 08:00:00",
+      "resolve_date": "2021-02-18",
+      "outcome": "negative",
+      "fwd_ret": -0.055973,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_VTRS_2020-12-07",
+      "stock_id": "VTRS.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-07 08:00:00",
+      "resolve_date": "2020-12-09",
+      "outcome": "negative",
+      "fwd_ret": -0.017367,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_V_2021-04-21",
+      "stock_id": "V.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2021-04-21 08:18:00",
+      "resolve_date": "2021-04-23",
+      "outcome": "positive",
+      "fwd_ret": 0.036486,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_WPC_2021-02-11",
+      "stock_id": "WPC.US",
+      "catalyst_type": "ma",
+      "decision_time": "2021-02-11 17:00:00",
+      "resolve_date": "2021-02-16",
+      "outcome": "negative",
+      "fwd_ret": -0.015571,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_XOM_2020-11-25",
+      "stock_id": "XOM.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-25 10:30:00",
+      "resolve_date": "2020-11-30",
+      "outcome": "negative",
+      "fwd_ret": -0.064441,
+      "horizon_days": 3
+    },
+    {
+      "catalyst_id": "EDT_ZM_2020-10-08",
+      "stock_id": "ZM.US",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-08 11:45:00",
+      "resolve_date": "2020-10-12",
+      "outcome": "positive",
+      "fwd_ret": 0.028715,
+      "horizon_days": 3
+    }
+  ]
+}

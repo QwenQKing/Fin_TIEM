@@ -1,0 +1,1292 @@
+{
+  "meta": {
+    "dataset": "Astock-eval",
+    "market": "CN",
+    "source": "JinanZou/Astock",
+    "horizon_days": 5,
+    "split_role": "eval",
+    "label_rule": "binary: positive if 5d-ret>=+0.55%, negative if <=-0.5%, drop (-0.5%,+0.55%) [StockNet deadband]"
+  },
+  "catalysts": [
+    {
+      "catalyst_id": "astock_000011.SZ_2020-08-14",
+      "stock_id": "000011.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-08-14 16:26",
+      "resolve_date": "2020-08-21",
+      "outcome": "negative",
+      "fwd_ret": -0.111149,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000062.SZ_2020-09-04",
+      "stock_id": "000062.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-04 20:49",
+      "resolve_date": "2020-09-11",
+      "outcome": "negative",
+      "fwd_ret": -0.050978,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000498.SZ_2020-07-15",
+      "stock_id": "000498.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-15 18:42",
+      "resolve_date": "2020-07-22",
+      "outcome": "negative",
+      "fwd_ret": -0.053679,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000507.SZ_2020-07-24",
+      "stock_id": "000507.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-24 19:37",
+      "resolve_date": "2020-07-31",
+      "outcome": "negative",
+      "fwd_ret": -0.014472,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000513.SZ_2020-07-14",
+      "stock_id": "000513.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-14 17:28",
+      "resolve_date": "2020-07-21",
+      "outcome": "positive",
+      "fwd_ret": 0.053705,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000516.SZ_2020-07-05",
+      "stock_id": "000516.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-05 17:09",
+      "resolve_date": "2020-07-12",
+      "outcome": "positive",
+      "fwd_ret": 0.400424,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000530.SZ_2020-12-30",
+      "stock_id": "000530.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-30 07:59",
+      "resolve_date": "2021-01-06",
+      "outcome": "negative",
+      "fwd_ret": -0.188751,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000550.SZ_2020-11-02",
+      "stock_id": "000550.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-02 16:37",
+      "resolve_date": "2020-11-09",
+      "outcome": "positive",
+      "fwd_ret": 0.021739,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000630.SZ_2020-12-10",
+      "stock_id": "000630.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-10 21:20",
+      "resolve_date": "2020-12-17",
+      "outcome": "negative",
+      "fwd_ret": -0.00775,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000638.SZ_2020-09-24",
+      "stock_id": "000638.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-24 18:56",
+      "resolve_date": "2020-10-01",
+      "outcome": "negative",
+      "fwd_ret": -0.224622,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000803.SZ_2020-11-23",
+      "stock_id": "000803.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-23 21:00",
+      "resolve_date": "2020-11-30",
+      "outcome": "negative",
+      "fwd_ret": -0.02439,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000813.SZ_2020-12-28",
+      "stock_id": "000813.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-12-28 21:32",
+      "resolve_date": "2021-01-04",
+      "outcome": "positive",
+      "fwd_ret": 0.075746,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000822.SZ_2020-08-13",
+      "stock_id": "000822.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-13 16:11",
+      "resolve_date": "2020-08-20",
+      "outcome": "positive",
+      "fwd_ret": 0.055432,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000905.SZ_2020-08-16",
+      "stock_id": "000905.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-08-16 17:55",
+      "resolve_date": "2020-08-23",
+      "outcome": "negative",
+      "fwd_ret": -0.049167,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000966.SZ_2020-11-18",
+      "stock_id": "000966.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-18 21:01",
+      "resolve_date": "2020-11-25",
+      "outcome": "positive",
+      "fwd_ret": 0.050228,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_000976.SZ_2020-07-20",
+      "stock_id": "000976.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-20 21:00",
+      "resolve_date": "2020-07-27",
+      "outcome": "negative",
+      "fwd_ret": -0.056769,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_001896.SZ_2020-12-27",
+      "stock_id": "001896.SZ",
+      "catalyst_type": "ma",
+      "decision_time": "2020-12-27 16:43",
+      "resolve_date": "2021-01-03",
+      "outcome": "negative",
+      "fwd_ret": -0.074757,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_001914.SZ_2020-07-13",
+      "stock_id": "001914.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-13 18:33",
+      "resolve_date": "2020-07-20",
+      "outcome": "positive",
+      "fwd_ret": 0.015277,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002022.SZ_2020-10-13",
+      "stock_id": "002022.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-13 19:43",
+      "resolve_date": "2020-10-20",
+      "outcome": "positive",
+      "fwd_ret": 0.006568,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002022.SZ_2020-12-30",
+      "stock_id": "002022.SZ",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-12-30 21:14",
+      "resolve_date": "2021-01-06",
+      "outcome": "negative",
+      "fwd_ret": -0.029091,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002038.SZ_2020-09-08",
+      "stock_id": "002038.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-08 16:59",
+      "resolve_date": "2020-09-15",
+      "outcome": "negative",
+      "fwd_ret": -0.008546,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002063.SZ_2020-12-18",
+      "stock_id": "002063.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-12-18 21:09",
+      "resolve_date": "2020-12-25",
+      "outcome": "positive",
+      "fwd_ret": 0.037613,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002101.SZ_2020-11-17",
+      "stock_id": "002101.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-11-17 20:47",
+      "resolve_date": "2020-11-24",
+      "outcome": "positive",
+      "fwd_ret": 0.043193,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002127.SZ_2020-08-21",
+      "stock_id": "002127.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-21 16:43",
+      "resolve_date": "2020-08-28",
+      "outcome": "negative",
+      "fwd_ret": -0.095212,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002130.SZ_2020-10-26",
+      "stock_id": "002130.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-26 19:45",
+      "resolve_date": "2020-11-02",
+      "outcome": "positive",
+      "fwd_ret": 0.024432,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002165.SZ_2020-08-07",
+      "stock_id": "002165.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-08-07 19:33",
+      "resolve_date": "2020-08-14",
+      "outcome": "negative",
+      "fwd_ret": -0.064516,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002234.SZ_2020-07-14",
+      "stock_id": "002234.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-14 18:38",
+      "resolve_date": "2020-07-21",
+      "outcome": "negative",
+      "fwd_ret": -0.060915,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002262.SZ_2020-10-30",
+      "stock_id": "002262.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-30 17:27",
+      "resolve_date": "2020-11-06",
+      "outcome": "positive",
+      "fwd_ret": 0.044919,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002286.SZ_2020-08-13",
+      "stock_id": "002286.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-08-13 17:07",
+      "resolve_date": "2020-08-20",
+      "outcome": "negative",
+      "fwd_ret": -0.093871,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002301.SZ_2020-08-03",
+      "stock_id": "002301.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-03 16:16",
+      "resolve_date": "2020-08-10",
+      "outcome": "negative",
+      "fwd_ret": -0.100108,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002350.SZ_2020-07-01",
+      "stock_id": "002350.SZ",
+      "catalyst_type": "ma",
+      "decision_time": "2020-07-01 20:02",
+      "resolve_date": "2020-07-08",
+      "outcome": "negative",
+      "fwd_ret": -0.056036,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002352.SZ_2020-08-25",
+      "stock_id": "002352.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-25 20:17",
+      "resolve_date": "2020-09-01",
+      "outcome": "positive",
+      "fwd_ret": 0.047002,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002354.SZ_2020-08-02",
+      "stock_id": "002354.SZ",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-08-02 16:13",
+      "resolve_date": "2020-08-09",
+      "outcome": "positive",
+      "fwd_ret": 0.102632,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002354.SZ_2020-10-19",
+      "stock_id": "002354.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-19 20:10",
+      "resolve_date": "2020-10-26",
+      "outcome": "positive",
+      "fwd_ret": 0.077364,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002409.SZ_2020-09-14",
+      "stock_id": "002409.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-14 16:41",
+      "resolve_date": "2020-09-21",
+      "outcome": "positive",
+      "fwd_ret": 0.067942,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002414.SZ_2020-12-22",
+      "stock_id": "002414.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-22 21:13",
+      "resolve_date": "2020-12-29",
+      "outcome": "positive",
+      "fwd_ret": 0.068396,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002452.SZ_2020-07-09",
+      "stock_id": "002452.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-09 15:56",
+      "resolve_date": "2020-07-16",
+      "outcome": "negative",
+      "fwd_ret": -0.09872,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002481.SZ_2020-12-23",
+      "stock_id": "002481.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-23 18:16",
+      "resolve_date": "2020-12-30",
+      "outcome": "negative",
+      "fwd_ret": -0.05743,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002503.SZ_2020-10-14",
+      "stock_id": "002503.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-14 21:12",
+      "resolve_date": "2020-10-21",
+      "outcome": "negative",
+      "fwd_ret": -0.022989,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002507.SZ_2020-08-20",
+      "stock_id": "002507.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-20 20:21",
+      "resolve_date": "2020-08-27",
+      "outcome": "positive",
+      "fwd_ret": 0.16351,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002580.SZ_2020-08-11",
+      "stock_id": "002580.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-08-11 20:02",
+      "resolve_date": "2020-08-18",
+      "outcome": "positive",
+      "fwd_ret": 0.033237,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002594.SZ_2020-12-01",
+      "stock_id": "002594.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-01 20:13",
+      "resolve_date": "2020-12-08",
+      "outcome": "positive",
+      "fwd_ret": 0.012507,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002641.SZ_2020-07-21",
+      "stock_id": "002641.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-21 18:26",
+      "resolve_date": "2020-07-28",
+      "outcome": "negative",
+      "fwd_ret": -0.044445,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002647.SZ_2020-12-07",
+      "stock_id": "002647.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-07 17:01",
+      "resolve_date": "2020-12-14",
+      "outcome": "negative",
+      "fwd_ret": -0.27836,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002761.SZ_2020-11-22",
+      "stock_id": "002761.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-22 16:52",
+      "resolve_date": "2020-11-29",
+      "outcome": "negative",
+      "fwd_ret": -0.036247,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002776.SZ_2020-11-04",
+      "stock_id": "002776.SZ",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-11-04 20:41",
+      "resolve_date": "2020-11-11",
+      "outcome": "negative",
+      "fwd_ret": -0.082043,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002782.SZ_2020-07-14",
+      "stock_id": "002782.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-14 18:49",
+      "resolve_date": "2020-07-21",
+      "outcome": "negative",
+      "fwd_ret": -0.046622,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002797.SZ_2020-07-14",
+      "stock_id": "002797.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-14 17:39",
+      "resolve_date": "2020-07-21",
+      "outcome": "negative",
+      "fwd_ret": -0.117264,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002806.SZ_2020-11-20",
+      "stock_id": "002806.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-20 12:00",
+      "resolve_date": "2020-11-27",
+      "outcome": "positive",
+      "fwd_ret": 0.034154,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002838.SZ_2020-08-25",
+      "stock_id": "002838.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-25 17:18",
+      "resolve_date": "2020-09-01",
+      "outcome": "positive",
+      "fwd_ret": 0.020449,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_002932.SZ_2020-07-09",
+      "stock_id": "002932.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-09 16:34",
+      "resolve_date": "2020-07-16",
+      "outcome": "negative",
+      "fwd_ret": -0.047531,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300015.SZ_2020-08-25",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-25 17:15",
+      "resolve_date": "2020-09-01",
+      "outcome": "positive",
+      "fwd_ret": 0.12936,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300026.SZ_2020-07-13",
+      "stock_id": "300026.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-07-13 18:12",
+      "resolve_date": "2020-07-20",
+      "outcome": "negative",
+      "fwd_ret": -0.079666,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300038.SZ_2020-07-06",
+      "stock_id": "300038.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-06 20:47",
+      "resolve_date": "2020-07-13",
+      "outcome": "positive",
+      "fwd_ret": 0.024398,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300116.SZ_2020-09-23",
+      "stock_id": "300116.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-23 16:29",
+      "resolve_date": "2020-09-30",
+      "outcome": "negative",
+      "fwd_ret": -0.069149,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300183.SZ_2020-12-18",
+      "stock_id": "300183.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-18 16:10",
+      "resolve_date": "2020-12-25",
+      "outcome": "negative",
+      "fwd_ret": -0.126158,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300197.SZ_2020-12-10",
+      "stock_id": "300197.SZ",
+      "catalyst_type": "ma",
+      "decision_time": "2020-12-10 11:59",
+      "resolve_date": "2020-12-17",
+      "outcome": "negative",
+      "fwd_ret": -0.053968,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300205.SZ_2020-10-21",
+      "stock_id": "300205.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-21 18:10",
+      "resolve_date": "2020-10-28",
+      "outcome": "negative",
+      "fwd_ret": -0.015873,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300262.SZ_2020-09-27",
+      "stock_id": "300262.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-27 17:01",
+      "resolve_date": "2020-10-04",
+      "outcome": "negative",
+      "fwd_ret": -0.072593,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300313.SZ_2020-12-10",
+      "stock_id": "300313.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-10 20:10",
+      "resolve_date": "2020-12-17",
+      "outcome": "positive",
+      "fwd_ret": 0.05381,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300371.SZ_2020-07-02",
+      "stock_id": "300371.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-02 16:19",
+      "resolve_date": "2020-07-09",
+      "outcome": "positive",
+      "fwd_ret": 0.10067,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300380.SZ_2020-10-29",
+      "stock_id": "300380.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-29 16:53",
+      "resolve_date": "2020-11-05",
+      "outcome": "negative",
+      "fwd_ret": -0.092858,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300395.SZ_2020-12-07",
+      "stock_id": "300395.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-12-07 11:57",
+      "resolve_date": "2020-12-14",
+      "outcome": "positive",
+      "fwd_ret": 0.090017,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300407.SZ_2020-12-02",
+      "stock_id": "300407.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-12-02 16:36",
+      "resolve_date": "2020-12-09",
+      "outcome": "negative",
+      "fwd_ret": -0.055307,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300413.SZ_2020-11-16",
+      "stock_id": "300413.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-16 20:51",
+      "resolve_date": "2020-11-23",
+      "outcome": "negative",
+      "fwd_ret": -0.069637,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300415.SZ_2020-07-13",
+      "stock_id": "300415.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-13 17:44",
+      "resolve_date": "2020-07-20",
+      "outcome": "positive",
+      "fwd_ret": 0.069654,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300478.SZ_2020-11-23",
+      "stock_id": "300478.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-23 20:51",
+      "resolve_date": "2020-11-30",
+      "outcome": "positive",
+      "fwd_ret": 0.043519,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300483.SZ_2020-12-03",
+      "stock_id": "300483.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-03 19:17",
+      "resolve_date": "2020-12-10",
+      "outcome": "positive",
+      "fwd_ret": 0.028797,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300503.SZ_2020-07-03",
+      "stock_id": "300503.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-03 20:53",
+      "resolve_date": "2020-07-10",
+      "outcome": "positive",
+      "fwd_ret": 0.005739,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300503.SZ_2020-08-23",
+      "stock_id": "300503.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-23 16:15",
+      "resolve_date": "2020-08-30",
+      "outcome": "negative",
+      "fwd_ret": -0.048865,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300575.SZ_2020-07-24",
+      "stock_id": "300575.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-24 20:34",
+      "resolve_date": "2020-07-31",
+      "outcome": "positive",
+      "fwd_ret": 0.129348,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300609.SZ_2020-12-24",
+      "stock_id": "300609.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-12-24 20:20",
+      "resolve_date": "2020-12-31",
+      "outcome": "positive",
+      "fwd_ret": 0.115121,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300620.SZ_2020-10-22",
+      "stock_id": "300620.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-22 21:17",
+      "resolve_date": "2020-10-29",
+      "outcome": "negative",
+      "fwd_ret": -0.07678,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300621.SZ_2020-11-11",
+      "stock_id": "300621.SZ",
+      "catalyst_type": "ma",
+      "decision_time": "2020-11-11 16:59",
+      "resolve_date": "2020-11-18",
+      "outcome": "negative",
+      "fwd_ret": -0.114743,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300629.SZ_2020-09-29",
+      "stock_id": "300629.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-29 20:33",
+      "resolve_date": "2020-10-06",
+      "outcome": "positive",
+      "fwd_ret": 0.008447,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300630.SZ_2020-10-11",
+      "stock_id": "300630.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-11 18:06",
+      "resolve_date": "2020-10-18",
+      "outcome": "positive",
+      "fwd_ret": 0.044928,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300639.SZ_2020-12-28",
+      "stock_id": "300639.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-12-28 20:32",
+      "resolve_date": "2021-01-04",
+      "outcome": "positive",
+      "fwd_ret": 0.100701,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300689.SZ_2020-10-23",
+      "stock_id": "300689.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-23 21:15",
+      "resolve_date": "2020-10-30",
+      "outcome": "negative",
+      "fwd_ret": -0.019768,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300690.SZ_2020-07-10",
+      "stock_id": "300690.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-10 15:57",
+      "resolve_date": "2020-07-17",
+      "outcome": "positive",
+      "fwd_ret": 0.074439,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300708.SZ_2020-11-02",
+      "stock_id": "300708.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-02 19:03",
+      "resolve_date": "2020-11-09",
+      "outcome": "positive",
+      "fwd_ret": 0.175121,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300727.SZ_2020-11-13",
+      "stock_id": "300727.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-13 16:57",
+      "resolve_date": "2020-11-20",
+      "outcome": "positive",
+      "fwd_ret": 0.116334,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300750.SZ_2020-10-27",
+      "stock_id": "300750.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-27 21:09",
+      "resolve_date": "2020-11-03",
+      "outcome": "positive",
+      "fwd_ret": 0.122557,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_300825.SZ_2020-12-23",
+      "stock_id": "300825.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-23 20:14",
+      "resolve_date": "2020-12-30",
+      "outcome": "negative",
+      "fwd_ret": -0.031579,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600079.SH_2020-09-09",
+      "stock_id": "600079.SH",
+      "catalyst_type": "ma",
+      "decision_time": "2020-09-09 18:20",
+      "resolve_date": "2020-09-16",
+      "outcome": "positive",
+      "fwd_ret": 0.082,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600093.SH_2020-11-17",
+      "stock_id": "600093.SH",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-11-17 19:53",
+      "resolve_date": "2020-11-24",
+      "outcome": "negative",
+      "fwd_ret": -0.049342,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600121.SH_2020-12-24",
+      "stock_id": "600121.SH",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-12-24 19:11",
+      "resolve_date": "2020-12-31",
+      "outcome": "positive",
+      "fwd_ret": 0.241848,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600189.SH_2020-11-20",
+      "stock_id": "600189.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2020-11-20 16:48",
+      "resolve_date": "2020-11-27",
+      "outcome": "negative",
+      "fwd_ret": -0.185,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600191.SH_2020-12-29",
+      "stock_id": "600191.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-29 18:39",
+      "resolve_date": "2021-01-05",
+      "outcome": "negative",
+      "fwd_ret": -0.035549,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600196.SH_2020-09-30",
+      "stock_id": "600196.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-30 16:53",
+      "resolve_date": "2020-10-07",
+      "outcome": "positive",
+      "fwd_ret": 0.191964,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600196.SH_2020-10-08",
+      "stock_id": "600196.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-08 16:35",
+      "resolve_date": "2020-10-15",
+      "outcome": "positive",
+      "fwd_ret": 0.191964,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600210.SH_2020-09-25",
+      "stock_id": "600210.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-25 17:33",
+      "resolve_date": "2020-10-02",
+      "outcome": "positive",
+      "fwd_ret": 0.025287,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600248.SH_2020-12-22",
+      "stock_id": "600248.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-22 19:30",
+      "resolve_date": "2020-12-29",
+      "outcome": "positive",
+      "fwd_ret": 0.051446,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600291.SH_2020-08-27",
+      "stock_id": "600291.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-27 22:53",
+      "resolve_date": "2020-09-03",
+      "outcome": "negative",
+      "fwd_ret": -0.298932,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600300.SH_2020-10-30",
+      "stock_id": "600300.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-30 15:37",
+      "resolve_date": "2020-11-06",
+      "outcome": "positive",
+      "fwd_ret": 0.070034,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600305.SH_2020-08-17",
+      "stock_id": "600305.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-17 15:48",
+      "resolve_date": "2020-08-24",
+      "outcome": "positive",
+      "fwd_ret": 0.084716,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600306.SH_2020-10-14",
+      "stock_id": "600306.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-14 16:19",
+      "resolve_date": "2020-10-21",
+      "outcome": "positive",
+      "fwd_ret": 0.105603,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600380.SH_2020-07-13",
+      "stock_id": "600380.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-13 09:06",
+      "resolve_date": "2020-07-20",
+      "outcome": "positive",
+      "fwd_ret": 0.099616,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600435.SH_2020-08-06",
+      "stock_id": "600435.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-08-06 20:16",
+      "resolve_date": "2020-08-13",
+      "outcome": "negative",
+      "fwd_ret": -0.109401,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600531.SH_2020-10-29",
+      "stock_id": "600531.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-29 17:51",
+      "resolve_date": "2020-11-05",
+      "outcome": "positive",
+      "fwd_ret": 0.13196,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600617.SH_2020-09-17",
+      "stock_id": "600617.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2020-09-17 15:36",
+      "resolve_date": "2020-09-24",
+      "outcome": "positive",
+      "fwd_ret": 0.048936,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600617.SH_2020-12-28",
+      "stock_id": "600617.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-28 17:21",
+      "resolve_date": "2021-01-04",
+      "outcome": "negative",
+      "fwd_ret": -0.07839,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600660.SH_2020-08-21",
+      "stock_id": "600660.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-21 16:09",
+      "resolve_date": "2020-08-28",
+      "outcome": "positive",
+      "fwd_ret": 0.050001,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600702.SH_2020-09-20",
+      "stock_id": "600702.SH",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-09-20 17:15",
+      "resolve_date": "2020-09-27",
+      "outcome": "negative",
+      "fwd_ret": -0.090326,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600822.SH_2020-09-08",
+      "stock_id": "600822.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-08 17:11",
+      "resolve_date": "2020-09-15",
+      "outcome": "positive",
+      "fwd_ret": 0.007557,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600864.SH_2020-07-09",
+      "stock_id": "600864.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-09 16:25",
+      "resolve_date": "2020-07-16",
+      "outcome": "negative",
+      "fwd_ret": -0.071881,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_600864.SH_2020-10-12",
+      "stock_id": "600864.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-10-12 15:48",
+      "resolve_date": "2020-10-19",
+      "outcome": "negative",
+      "fwd_ret": -0.015919,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_601601.SH_2020-07-09",
+      "stock_id": "601601.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-09 18:27",
+      "resolve_date": "2020-07-16",
+      "outcome": "negative",
+      "fwd_ret": -0.103281,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_601966.SH_2020-08-11",
+      "stock_id": "601966.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-11 16:11",
+      "resolve_date": "2020-08-18",
+      "outcome": "positive",
+      "fwd_ret": 0.048979,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603025.SH_2020-09-15",
+      "stock_id": "603025.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-09-15 08:36",
+      "resolve_date": "2020-09-22",
+      "outcome": "negative",
+      "fwd_ret": -0.381121,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603069.SH_2020-12-23",
+      "stock_id": "603069.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-12-23 18:58",
+      "resolve_date": "2020-12-30",
+      "outcome": "negative",
+      "fwd_ret": -0.118846,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603105.SH_2020-08-05",
+      "stock_id": "603105.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-05 16:11",
+      "resolve_date": "2020-08-12",
+      "outcome": "positive",
+      "fwd_ret": 0.130974,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603259.SH_2020-09-24",
+      "stock_id": "603259.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-09-24 16:48",
+      "resolve_date": "2020-10-01",
+      "outcome": "positive",
+      "fwd_ret": 0.088889,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603301.SH_2020-11-09",
+      "stock_id": "603301.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-11-09 18:17",
+      "resolve_date": "2020-11-16",
+      "outcome": "negative",
+      "fwd_ret": -0.133887,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603444.SH_2020-08-17",
+      "stock_id": "603444.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-17 16:04",
+      "resolve_date": "2020-08-24",
+      "outcome": "positive",
+      "fwd_ret": 0.132605,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603606.SH_2020-07-27",
+      "stock_id": "603606.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-27 18:03",
+      "resolve_date": "2020-08-03",
+      "outcome": "positive",
+      "fwd_ret": 0.264987,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603655.SH_2020-07-03",
+      "stock_id": "603655.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-03 16:50",
+      "resolve_date": "2020-07-10",
+      "outcome": "positive",
+      "fwd_ret": 0.029622,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603690.SH_2020-07-13",
+      "stock_id": "603690.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-13 15:38",
+      "resolve_date": "2020-07-20",
+      "outcome": "negative",
+      "fwd_ret": -0.221292,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603712.SH_2020-10-22",
+      "stock_id": "603712.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2020-10-22 16:08",
+      "resolve_date": "2020-10-29",
+      "outcome": "positive",
+      "fwd_ret": 0.078989,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603822.SH_2020-12-23",
+      "stock_id": "603822.SH",
+      "catalyst_type": "regulatory",
+      "decision_time": "2020-12-23 17:45",
+      "resolve_date": "2020-12-30",
+      "outcome": "negative",
+      "fwd_ret": -0.108923,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603896.SH_2020-07-15",
+      "stock_id": "603896.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2020-07-15 17:03",
+      "resolve_date": "2020-07-22",
+      "outcome": "positive",
+      "fwd_ret": 0.092668,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603916.SH_2020-07-03",
+      "stock_id": "603916.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-07-03 15:50",
+      "resolve_date": "2020-07-10",
+      "outcome": "positive",
+      "fwd_ret": 0.031286,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603976.SH_2020-07-10",
+      "stock_id": "603976.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2020-07-10 19:09",
+      "resolve_date": "2020-07-17",
+      "outcome": "negative",
+      "fwd_ret": -0.195,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603986.SH_2020-08-25",
+      "stock_id": "603986.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-08-25 16:16",
+      "resolve_date": "2020-09-01",
+      "outcome": "negative",
+      "fwd_ret": -0.025148,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_603988.SH_2020-09-07",
+      "stock_id": "603988.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2020-09-07 18:22",
+      "resolve_date": "2020-09-14",
+      "outcome": "negative",
+      "fwd_ret": -0.109642,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_688036.SH_2020-10-27",
+      "stock_id": "688036.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-27 18:14",
+      "resolve_date": "2020-11-03",
+      "outcome": "positive",
+      "fwd_ret": 0.21719,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_688111.SH_2020-11-23",
+      "stock_id": "688111.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2020-11-23 19:04",
+      "resolve_date": "2020-11-30",
+      "outcome": "positive",
+      "fwd_ret": 0.05451,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_688399.SH_2020-10-28",
+      "stock_id": "688399.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-28 16:51",
+      "resolve_date": "2020-11-04",
+      "outcome": "negative",
+      "fwd_ret": -0.02498,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "astock_688595.SH_2020-10-28",
+      "stock_id": "688595.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2020-10-28 18:26",
+      "resolve_date": "2020-11-04",
+      "outcome": "positive",
+      "fwd_ret": 0.072,
+      "horizon_days": 5
+    }
+  ]
+}

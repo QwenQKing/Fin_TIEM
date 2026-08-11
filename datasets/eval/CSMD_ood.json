@@ -1,0 +1,1292 @@
+{
+  "meta": {
+    "dataset": "CSMD_ood-eval",
+    "market": "CN",
+    "source": "CSMD-LightQuant (CSMD50+CSMD300)",
+    "horizon_days": 5,
+    "split_role": "eval",
+    "label_rule": "binary: positive if 5d-ret>=+0.55%, negative if <=-0.5%, drop (-0.5%,+0.55%) [StockNet deadband]"
+  },
+  "catalysts": [
+    {
+      "catalyst_id": "CSMD_000100.SZ_2024-05-29",
+      "stock_id": "000100.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2024-05-29",
+      "resolve_date": "2024-06-05",
+      "outcome": "positive",
+      "fwd_ret": 0.023148,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_000100.SZ_2024-06-28",
+      "stock_id": "000100.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-28",
+      "resolve_date": "2024-07-05",
+      "outcome": "negative",
+      "fwd_ret": -0.023148,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_000100.SZ_2024-08-19",
+      "stock_id": "000100.SZ",
+      "catalyst_type": "ma",
+      "decision_time": "2024-08-19",
+      "resolve_date": "2024-08-26",
+      "outcome": "positive",
+      "fwd_ret": 0.012987,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_000100.SZ_2024-08-30",
+      "stock_id": "000100.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-30",
+      "resolve_date": "2024-09-06",
+      "outcome": "negative",
+      "fwd_ret": -0.017903,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_000100.SZ_2024-10-31",
+      "stock_id": "000100.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2024-10-31",
+      "resolve_date": "2024-11-07",
+      "outcome": "negative",
+      "fwd_ret": -0.028302,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_002129.SZ_2024-04-29",
+      "stock_id": "002129.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-04-29",
+      "resolve_date": "2024-05-06",
+      "outcome": "positive",
+      "fwd_ret": 0.021218,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_002129.SZ_2024-05-08",
+      "stock_id": "002129.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-08",
+      "resolve_date": "2024-05-15",
+      "outcome": "positive",
+      "fwd_ret": 0.014423,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_002129.SZ_2024-08-29",
+      "stock_id": "002129.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-29",
+      "resolve_date": "2024-09-05",
+      "outcome": "positive",
+      "fwd_ret": 0.026415,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_002129.SZ_2024-10-10",
+      "stock_id": "002129.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-10",
+      "resolve_date": "2024-10-17",
+      "outcome": "negative",
+      "fwd_ret": -0.094801,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_002129.SZ_2024-10-21",
+      "stock_id": "002129.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-21",
+      "resolve_date": "2024-10-28",
+      "outcome": "positive",
+      "fwd_ret": 0.292559,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_002129.SZ_2024-10-30",
+      "stock_id": "002129.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-10-30",
+      "resolve_date": "2024-11-06",
+      "outcome": "negative",
+      "fwd_ret": -0.044335,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_002129.SZ_2024-12-10",
+      "stock_id": "002129.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-10",
+      "resolve_date": "2024-12-17",
+      "outcome": "negative",
+      "fwd_ret": -0.055276,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-04-23",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2024-04-23",
+      "resolve_date": "2024-04-30",
+      "outcome": "positive",
+      "fwd_ret": 0.067881,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-05-22",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "rating",
+      "decision_time": "2024-05-22",
+      "resolve_date": "2024-05-29",
+      "outcome": "negative",
+      "fwd_ret": -0.050702,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-05-30",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-30",
+      "resolve_date": "2024-06-06",
+      "outcome": "negative",
+      "fwd_ret": -0.033085,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-06-18",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-18",
+      "resolve_date": "2024-06-25",
+      "outcome": "negative",
+      "fwd_ret": -0.09375,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-06-21",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-21",
+      "resolve_date": "2024-06-28",
+      "outcome": "negative",
+      "fwd_ret": -0.044444,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-07-09",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-09",
+      "resolve_date": "2024-07-16",
+      "outcome": "positive",
+      "fwd_ret": 0.07332,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-08-22",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-22",
+      "resolve_date": "2024-08-29",
+      "outcome": "negative",
+      "fwd_ret": -0.053266,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-09-25",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-25",
+      "resolve_date": "2024-10-02",
+      "outcome": "positive",
+      "fwd_ret": 0.508687,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-09-30",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-30",
+      "resolve_date": "2024-10-07",
+      "outcome": "negative",
+      "fwd_ret": -0.092395,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-10-25",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-25",
+      "resolve_date": "2024-11-01",
+      "outcome": "negative",
+      "fwd_ret": -0.053405,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-10-31",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-10-31",
+      "resolve_date": "2024-11-07",
+      "outcome": "positive",
+      "fwd_ret": 0.138716,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300015.SZ_2024-11-04",
+      "stock_id": "300015.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-11-04",
+      "resolve_date": "2024-11-11",
+      "outcome": "positive",
+      "fwd_ret": 0.124481,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-04-12",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-12",
+      "resolve_date": "2024-04-19",
+      "outcome": "negative",
+      "fwd_ret": -0.035741,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-04-26",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-04-26",
+      "resolve_date": "2024-05-03",
+      "outcome": "negative",
+      "fwd_ret": -0.273021,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-06-13",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-13",
+      "resolve_date": "2024-06-20",
+      "outcome": "negative",
+      "fwd_ret": -0.046424,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-06-17",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-17",
+      "resolve_date": "2024-06-24",
+      "outcome": "negative",
+      "fwd_ret": -0.057752,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-07-05",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-05",
+      "resolve_date": "2024-07-12",
+      "outcome": "positive",
+      "fwd_ret": 0.053418,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-10-16",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-16",
+      "resolve_date": "2024-10-23",
+      "outcome": "positive",
+      "fwd_ret": 0.080147,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-10-25",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-25",
+      "resolve_date": "2024-11-01",
+      "outcome": "negative",
+      "fwd_ret": -0.026616,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_300896.SZ_2024-12-12",
+      "stock_id": "300896.SZ",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-12",
+      "resolve_date": "2024-12-19",
+      "outcome": "negative",
+      "fwd_ret": -0.083691,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600010.SH_2024-05-16",
+      "stock_id": "600010.SH",
+      "catalyst_type": "regulatory",
+      "decision_time": "2024-05-16",
+      "resolve_date": "2024-05-23",
+      "outcome": "negative",
+      "fwd_ret": -0.012579,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600010.SH_2024-06-26",
+      "stock_id": "600010.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2024-06-26",
+      "resolve_date": "2024-07-03",
+      "outcome": "positive",
+      "fwd_ret": 0.014184,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600010.SH_2024-10-09",
+      "stock_id": "600010.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-09",
+      "resolve_date": "2024-10-16",
+      "outcome": "negative",
+      "fwd_ret": -0.018072,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600010.SH_2024-12-10",
+      "stock_id": "600010.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-10",
+      "resolve_date": "2024-12-17",
+      "outcome": "negative",
+      "fwd_ret": -0.071429,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600010.SH_2024-12-12",
+      "stock_id": "600010.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-12",
+      "resolve_date": "2024-12-19",
+      "outcome": "negative",
+      "fwd_ret": -0.048544,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600019.SH_2024-04-30",
+      "stock_id": "600019.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-04-30",
+      "resolve_date": "2024-05-07",
+      "outcome": "positive",
+      "fwd_ret": 0.011511,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600019.SH_2024-06-06",
+      "stock_id": "600019.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-06",
+      "resolve_date": "2024-06-13",
+      "outcome": "negative",
+      "fwd_ret": -0.034091,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600019.SH_2024-06-11",
+      "stock_id": "600019.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-11",
+      "resolve_date": "2024-06-18",
+      "outcome": "negative",
+      "fwd_ret": -0.040936,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600019.SH_2024-06-27",
+      "stock_id": "600019.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-27",
+      "resolve_date": "2024-07-04",
+      "outcome": "positive",
+      "fwd_ret": 0.065549,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600019.SH_2024-07-01",
+      "stock_id": "600019.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-01",
+      "resolve_date": "2024-07-08",
+      "outcome": "positive",
+      "fwd_ret": 0.044379,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600019.SH_2024-07-24",
+      "stock_id": "600019.SH",
+      "catalyst_type": "ma",
+      "decision_time": "2024-07-24",
+      "resolve_date": "2024-07-31",
+      "outcome": "negative",
+      "fwd_ret": -0.022989,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600019.SH_2024-09-12",
+      "stock_id": "600019.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-12",
+      "resolve_date": "2024-09-19",
+      "outcome": "positive",
+      "fwd_ret": 0.021429,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-04-22",
+      "stock_id": "600048.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-04-22",
+      "resolve_date": "2024-04-29",
+      "outcome": "positive",
+      "fwd_ret": 0.147095,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-04-26",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-26",
+      "resolve_date": "2024-05-03",
+      "outcome": "positive",
+      "fwd_ret": 0.039352,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-04-30",
+      "stock_id": "600048.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-04-30",
+      "resolve_date": "2024-05-07",
+      "outcome": "positive",
+      "fwd_ret": 0.090909,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-05-07",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-07",
+      "resolve_date": "2024-05-14",
+      "outcome": "positive",
+      "fwd_ret": 0.033441,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-07-09",
+      "stock_id": "600048.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-07-09",
+      "resolve_date": "2024-07-16",
+      "outcome": "positive",
+      "fwd_ret": 0.063084,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-08-08",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-08",
+      "resolve_date": "2024-08-15",
+      "outcome": "negative",
+      "fwd_ret": -0.03184,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-08-09",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-09",
+      "resolve_date": "2024-08-16",
+      "outcome": "negative",
+      "fwd_ret": -0.043275,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-08-14",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-14",
+      "resolve_date": "2024-08-21",
+      "outcome": "negative",
+      "fwd_ret": -0.035539,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-08-16",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-16",
+      "resolve_date": "2024-08-23",
+      "outcome": "negative",
+      "fwd_ret": -0.033007,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-11-08",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-08",
+      "resolve_date": "2024-11-15",
+      "outcome": "negative",
+      "fwd_ret": -0.095707,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-12-05",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-05",
+      "resolve_date": "2024-12-12",
+      "outcome": "positive",
+      "fwd_ret": 0.01592,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600048.SH_2024-12-06",
+      "stock_id": "600048.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-06",
+      "resolve_date": "2024-12-13",
+      "outcome": "negative",
+      "fwd_ret": -0.030542,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-04-18",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-18",
+      "resolve_date": "2024-04-25",
+      "outcome": "positive",
+      "fwd_ret": 0.046045,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-05-09",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-09",
+      "resolve_date": "2024-05-16",
+      "outcome": "negative",
+      "fwd_ret": -0.047122,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-05-28",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-28",
+      "resolve_date": "2024-06-04",
+      "outcome": "positive",
+      "fwd_ret": 0.012942,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-06-21",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-21",
+      "resolve_date": "2024-06-28",
+      "outcome": "negative",
+      "fwd_ret": -0.039461,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-07-18",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-18",
+      "resolve_date": "2024-07-25",
+      "outcome": "negative",
+      "fwd_ret": -0.01637,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-08-02",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-02",
+      "resolve_date": "2024-08-09",
+      "outcome": "positive",
+      "fwd_ret": 0.005928,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-08-05",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-05",
+      "resolve_date": "2024-08-12",
+      "outcome": "positive",
+      "fwd_ret": 0.022978,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-08-15",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-15",
+      "resolve_date": "2024-08-22",
+      "outcome": "positive",
+      "fwd_ret": 0.023532,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-09-12",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-12",
+      "resolve_date": "2024-09-19",
+      "outcome": "negative",
+      "fwd_ret": -0.050256,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-10-18",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-18",
+      "resolve_date": "2024-10-25",
+      "outcome": "negative",
+      "fwd_ret": -0.049128,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-11-25",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-25",
+      "resolve_date": "2024-12-02",
+      "outcome": "positive",
+      "fwd_ret": 0.056323,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-11-27",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-27",
+      "resolve_date": "2024-12-04",
+      "outcome": "negative",
+      "fwd_ret": -0.011802,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600276.SH_2024-11-28",
+      "stock_id": "600276.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-28",
+      "resolve_date": "2024-12-05",
+      "outcome": "negative",
+      "fwd_ret": -0.015091,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600332.SH_2024-07-22",
+      "stock_id": "600332.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-07-22",
+      "resolve_date": "2024-07-29",
+      "outcome": "negative",
+      "fwd_ret": -0.081343,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600332.SH_2024-09-18",
+      "stock_id": "600332.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-18",
+      "resolve_date": "2024-09-25",
+      "outcome": "positive",
+      "fwd_ret": 0.057513,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600406.SH_2024-05-31",
+      "stock_id": "600406.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-31",
+      "resolve_date": "2024-06-07",
+      "outcome": "positive",
+      "fwd_ret": 0.055975,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600519.SH_2024-04-29",
+      "stock_id": "600519.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-29",
+      "resolve_date": "2024-05-06",
+      "outcome": "positive",
+      "fwd_ret": 0.030516,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600519.SH_2024-06-07",
+      "stock_id": "600519.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-07",
+      "resolve_date": "2024-06-14",
+      "outcome": "negative",
+      "fwd_ret": -0.047975,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600519.SH_2024-07-25",
+      "stock_id": "600519.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2024-07-25",
+      "resolve_date": "2024-08-01",
+      "outcome": "negative",
+      "fwd_ret": -0.030989,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600519.SH_2024-08-06",
+      "stock_id": "600519.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-06",
+      "resolve_date": "2024-08-13",
+      "outcome": "positive",
+      "fwd_ret": 0.013035,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600519.SH_2024-09-09",
+      "stock_id": "600519.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-09-09",
+      "resolve_date": "2024-09-16",
+      "outcome": "negative",
+      "fwd_ret": -0.078618,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600519.SH_2024-10-29",
+      "stock_id": "600519.SH",
+      "catalyst_type": "rating",
+      "decision_time": "2024-10-29",
+      "resolve_date": "2024-11-05",
+      "outcome": "positive",
+      "fwd_ret": 0.029622,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600690.SH_2024-05-08",
+      "stock_id": "600690.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-08",
+      "resolve_date": "2024-05-15",
+      "outcome": "positive",
+      "fwd_ret": 0.038056,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600690.SH_2024-05-20",
+      "stock_id": "600690.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-05-20",
+      "resolve_date": "2024-05-27",
+      "outcome": "positive",
+      "fwd_ret": 0.009852,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600690.SH_2024-06-24",
+      "stock_id": "600690.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-06-24",
+      "resolve_date": "2024-07-01",
+      "outcome": "negative",
+      "fwd_ret": -0.045072,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600690.SH_2024-07-18",
+      "stock_id": "600690.SH",
+      "catalyst_type": "ma",
+      "decision_time": "2024-07-18",
+      "resolve_date": "2024-07-25",
+      "outcome": "negative",
+      "fwd_ret": -0.058802,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600690.SH_2024-08-14",
+      "stock_id": "600690.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-14",
+      "resolve_date": "2024-08-21",
+      "outcome": "negative",
+      "fwd_ret": -0.056937,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600732.SH_2024-07-26",
+      "stock_id": "600732.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-26",
+      "resolve_date": "2024-08-02",
+      "outcome": "negative",
+      "fwd_ret": -0.042735,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600732.SH_2024-11-01",
+      "stock_id": "600732.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-01",
+      "resolve_date": "2024-11-08",
+      "outcome": "positive",
+      "fwd_ret": 0.136071,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600732.SH_2024-11-04",
+      "stock_id": "600732.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-04",
+      "resolve_date": "2024-11-11",
+      "outcome": "positive",
+      "fwd_ret": 0.27422,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600732.SH_2024-12-03",
+      "stock_id": "600732.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-03",
+      "resolve_date": "2024-12-10",
+      "outcome": "negative",
+      "fwd_ret": -0.147583,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-04-02",
+      "stock_id": "600845.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-02",
+      "resolve_date": "2024-04-09",
+      "outcome": "positive",
+      "fwd_ret": 0.062849,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-04-18",
+      "stock_id": "600845.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-18",
+      "resolve_date": "2024-04-25",
+      "outcome": "positive",
+      "fwd_ret": 0.047093,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-08-29",
+      "stock_id": "600845.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-08-29",
+      "resolve_date": "2024-09-05",
+      "outcome": "positive",
+      "fwd_ret": 0.013379,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-08-30",
+      "stock_id": "600845.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-08-30",
+      "resolve_date": "2024-09-06",
+      "outcome": "negative",
+      "fwd_ret": -0.006148,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-09-12",
+      "stock_id": "600845.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-09-12",
+      "resolve_date": "2024-09-19",
+      "outcome": "negative",
+      "fwd_ret": -0.046833,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-09-13",
+      "stock_id": "600845.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-09-13",
+      "resolve_date": "2024-09-20",
+      "outcome": "negative",
+      "fwd_ret": -0.011648,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-12-02",
+      "stock_id": "600845.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-02",
+      "resolve_date": "2024-12-09",
+      "outcome": "negative",
+      "fwd_ret": -0.020134,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600845.SH_2024-12-12",
+      "stock_id": "600845.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-12",
+      "resolve_date": "2024-12-19",
+      "outcome": "positive",
+      "fwd_ret": 0.020509,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600989.SH_2024-04-22",
+      "stock_id": "600989.SH",
+      "catalyst_type": "regulatory",
+      "decision_time": "2024-04-22",
+      "resolve_date": "2024-04-29",
+      "outcome": "negative",
+      "fwd_ret": -0.011933,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600989.SH_2024-11-05",
+      "stock_id": "600989.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-05",
+      "resolve_date": "2024-11-12",
+      "outcome": "negative",
+      "fwd_ret": -0.041256,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600989.SH_2024-11-07",
+      "stock_id": "600989.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-07",
+      "resolve_date": "2024-11-14",
+      "outcome": "negative",
+      "fwd_ret": -0.072029,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_600989.SH_2024-11-28",
+      "stock_id": "600989.SH",
+      "catalyst_type": "ma",
+      "decision_time": "2024-11-28",
+      "resolve_date": "2024-12-05",
+      "outcome": "negative",
+      "fwd_ret": -0.019938,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-04-16",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-16",
+      "resolve_date": "2024-04-23",
+      "outcome": "positive",
+      "fwd_ret": 0.032836,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-04-24",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-24",
+      "resolve_date": "2024-05-01",
+      "outcome": "negative",
+      "fwd_ret": -0.017366,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-05-16",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-16",
+      "resolve_date": "2024-05-23",
+      "outcome": "positive",
+      "fwd_ret": 0.014347,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-05-21",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-21",
+      "resolve_date": "2024-05-28",
+      "outcome": "positive",
+      "fwd_ret": 0.007102,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-05-30",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-30",
+      "resolve_date": "2024-06-06",
+      "outcome": "positive",
+      "fwd_ret": 0.028653,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-07-15",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-15",
+      "resolve_date": "2024-07-22",
+      "outcome": "negative",
+      "fwd_ret": -0.006658,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-08-07",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-07",
+      "resolve_date": "2024-08-14",
+      "outcome": "positive",
+      "fwd_ret": 0.030096,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-08-08",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-08",
+      "resolve_date": "2024-08-15",
+      "outcome": "positive",
+      "fwd_ret": 0.042524,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-08-09",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-09",
+      "resolve_date": "2024-08-16",
+      "outcome": "positive",
+      "fwd_ret": 0.056011,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-08-12",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-12",
+      "resolve_date": "2024-08-19",
+      "outcome": "positive",
+      "fwd_ret": 0.074627,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-09-04",
+      "stock_id": "601328.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-09-04",
+      "resolve_date": "2024-09-11",
+      "outcome": "negative",
+      "fwd_ret": -0.039648,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-09-09",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-09",
+      "resolve_date": "2024-09-16",
+      "outcome": "negative",
+      "fwd_ret": -0.026746,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-10-11",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-10-11",
+      "resolve_date": "2024-10-18",
+      "outcome": "positive",
+      "fwd_ret": 0.014925,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-11-05",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-05",
+      "resolve_date": "2024-11-12",
+      "outcome": "negative",
+      "fwd_ret": -0.026135,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601328.SH_2024-11-22",
+      "stock_id": "601328.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-11-22",
+      "resolve_date": "2024-11-29",
+      "outcome": "positive",
+      "fwd_ret": 0.035311,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-04-01",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-04-01",
+      "resolve_date": "2024-04-08",
+      "outcome": "positive",
+      "fwd_ret": 0.009452,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-05-17",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-05-17",
+      "resolve_date": "2024-05-24",
+      "outcome": "negative",
+      "fwd_ret": -0.005484,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-07-04",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-04",
+      "resolve_date": "2024-07-11",
+      "outcome": "negative",
+      "fwd_ret": -0.005034,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-07-17",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-17",
+      "resolve_date": "2024-07-24",
+      "outcome": "positive",
+      "fwd_ret": 0.025381,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-08-14",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-14",
+      "resolve_date": "2024-08-21",
+      "outcome": "positive",
+      "fwd_ret": 0.046512,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-08-28",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-08-28",
+      "resolve_date": "2024-09-04",
+      "outcome": "negative",
+      "fwd_ret": -0.120185,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-09-04",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-04",
+      "resolve_date": "2024-09-11",
+      "outcome": "negative",
+      "fwd_ret": -0.029772,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-09-09",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-09-09",
+      "resolve_date": "2024-09-16",
+      "outcome": "positive",
+      "fwd_ret": 0.012478,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-12-06",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-06",
+      "resolve_date": "2024-12-13",
+      "outcome": "positive",
+      "fwd_ret": 0.011076,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_601398.SH_2024-12-10",
+      "stock_id": "601398.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-10",
+      "resolve_date": "2024-12-17",
+      "outcome": "positive",
+      "fwd_ret": 0.014019,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_688041.SH_2024-07-15",
+      "stock_id": "688041.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-07-15",
+      "resolve_date": "2024-07-22",
+      "outcome": "positive",
+      "fwd_ret": 0.0925,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_688041.SH_2024-12-18",
+      "stock_id": "688041.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-12-18",
+      "resolve_date": "2024-12-25",
+      "outcome": "positive",
+      "fwd_ret": 0.292079,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_688111.SH_2024-07-24",
+      "stock_id": "688111.SH",
+      "catalyst_type": "large_move",
+      "decision_time": "2024-07-24",
+      "resolve_date": "2024-07-31",
+      "outcome": "positive",
+      "fwd_ret": 0.081925,
+      "horizon_days": 5
+    },
+    {
+      "catalyst_id": "CSMD_688111.SH_2024-10-30",
+      "stock_id": "688111.SH",
+      "catalyst_type": "earnings",
+      "decision_time": "2024-10-30",
+      "resolve_date": "2024-11-06",
+      "outcome": "positive",
+      "fwd_ret": 0.044087,
+      "horizon_days": 5
+    }
+  ]
+}
