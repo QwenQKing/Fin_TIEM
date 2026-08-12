@@ -15,7 +15,7 @@ WINDOW_OVERRIDE = {'EDT_ood': 30}
 
 def build_one_ds(ds: str, force: bool, l2_only: bool, l3_only: bool, window_days: int):
     store_dir = ROOT / f'databases/{ds}/02_event'
-    ds_data_path = ROOT / f'datasets/data/{ds}.json'
+    ds_data_path = ROOT / f'datasets/data-db/event/{ds}.json'
     done_flag = store_dir / '.done_c2f'
     if done_flag.exists() and (not force):
         info = json.loads(done_flag.read_text(encoding='utf-8'))
