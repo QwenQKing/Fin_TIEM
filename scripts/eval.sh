@@ -5,6 +5,7 @@ export TIEM_USE_C2F=1
 export TIEM_USE_CSM=0
 export TIEM_USE_SCMR=0
 export TIEM_PIT_OFF=0
+export CSM_STRICT_PROVENANCE=1
 SPLIT="${1:-eval}"
 for ds in Astock FinPURE CMIN-US_ood EDT_ood CSMD_ood; do
   echo "==== eval [$SPLIT] $ds (events= EEH, =Astock) ===="

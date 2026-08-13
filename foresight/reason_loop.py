@@ -209,7 +209,7 @@ def retrieve_evidence(ev, ss, tk, el, cache) -> dict:
         et, exp_query, k=cfg.EXP_K, before_date=T,
         min_sim=cfg.EXP_MIN_SIM, domain_boost=cfg.EXP_DOMAIN_BOOST,
         use_stability_weight=cfg.USE_CSM,
-        strict_provenance=os.getenv('CSM_STRICT_PROVENANCE', '0') == '1')
+        strict_provenance=os.getenv('CSM_STRICT_PROVENANCE', '1') == '1')
     concurrent = tk.concurrent_events(s, T)
     episodes = themes = None
     if cfg.USE_C2F:
