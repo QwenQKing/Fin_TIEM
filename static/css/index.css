@@ -33,6 +33,16 @@ html { scroll-behavior: smooth; }
 .tiem-hero-visual { max-width: 900px; margin: 0 auto; padding: .8rem; border: 1px solid rgba(20,93,160,.15); border-radius: 18px; background: rgba(255,255,255,.84); box-shadow: 0 24px 70px rgba(27,65,98,.14); }
 .tiem-hero-visual img { display: block; width: 100%; border-radius: 11px; }
 
+.tiem-carousel-section { padding-bottom: 2rem; background: #fff; }
+.results-carousel { overflow: hidden; }
+.results-carousel .item { min-height: 580px; margin: 5px; padding: 20px 56px 38px; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+.results-carousel .item img { display: block; max-width: 100%; max-height: 440px; width: auto; height: auto; margin: auto; border: 1px solid #dce5ed; border-radius: 12px; object-fit: contain; box-shadow: 0 14px 44px rgba(26,53,87,.09); }
+.results-carousel .item .subtitle { max-width: 1050px; margin: 1.4rem auto 0; color: #53627a; font-size: 1rem; line-height: 1.6; }
+.results-carousel .slider-navigation-previous,
+.results-carousel .slider-navigation-next { width: 44px; height: 44px; border: 1px solid #c8d7e4; color: #145da0; background: #fff; box-shadow: 0 5px 18px rgba(26,53,87,.12); }
+.results-carousel .slider-pagination .slider-page { background: #8da3b5; }
+.results-carousel .slider-pagination .slider-page.is-active { background: #145da0; }
+
 .tiem-section-label { margin-bottom: .65rem; color: #16858d; font-size: .75rem; font-weight: 800; letter-spacing: .18em; text-align: center; text-transform: uppercase; }
 .tiem-section-label.is-left { text-align: left; }
 .tiem-copy { color: #42516b; line-height: 1.8; }
@@ -61,6 +71,9 @@ html { scroll-behavior: smooth; }
   .publication-title { font-size: 4.4rem !important; }
   .tiem-subtitle { font-size: 1.25rem !important; }
   .tiem-wide-figure { margin-top: 2rem; }
+  .results-carousel .item { min-height: 470px; padding: 12px 18px 42px; }
+  .results-carousel .item img { max-height: 330px; }
+  .results-carousel .item .subtitle { font-size: .9rem; }
 }
 
 
@@ -232,4 +245,3 @@ html { scroll-behavior: smooth; }
 .tiem-accent {
   color: #1666a8;
 }
-
