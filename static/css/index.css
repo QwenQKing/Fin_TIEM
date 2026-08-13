@@ -30,6 +30,7 @@ html { scroll-behavior: smooth; }
 .tiem-lead { max-width: 680px; margin: 0 auto 1.5rem; color: #65718a; font-size: 1.1rem; }
 .tiem-actions { margin: 1.5rem 0 3rem; }
 .tiem-button-light { border-color: #b9c9d8 !important; color: #263a55 !important; background: rgba(255,255,255,.85) !important; }
+.tiem-hf-icon { font-size: 1.05rem; line-height: 1; }
 .tiem-hero-visual { max-width: 900px; margin: 0 auto; padding: .8rem; border: 1px solid rgba(20,93,160,.15); border-radius: 18px; background: rgba(255,255,255,.84); box-shadow: 0 24px 70px rgba(27,65,98,.14); }
 .tiem-hero-visual img { display: block; width: 100%; border-radius: 11px; }
 
