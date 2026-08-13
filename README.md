@@ -5,8 +5,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-2511.01016-b31b1b.svg)]()
 [![Homepage](https://img.shields.io/badge/Homepage-Fin__TIEM-black.svg)](https://qwenqking.github.io/Fin_TIEM/)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-blue.svg?logo=huggingface)](https://huggingface.co/datasets/QwenQKing/TIEM-dataset)
-[![HF Models](https://img.shields.io/badge/Dataset-HuggingFace-orange.svg?logo=huggingface)](https://huggingface.co/datasets/QwenQKing/TIEM-databases)
-
+[![Databases](https://img.shields.io/badge/Databases-HuggingFace-orange.svg?logo=huggingface)](https://huggingface.co/datasets/QwenQKing/TIEM-databases)
 
 
 ### **TIEM**: Temporal Integration of Hypergraph Evidence and Skill Memory for Event-Driven Financial Forecasting
