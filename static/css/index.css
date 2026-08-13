@@ -1,5 +1,66 @@
 body {
   font-family: 'Noto Sans', sans-serif;
+  color: #17233b;
+  background: #ffffff;
+}
+
+html { scroll-behavior: smooth; }
+
+.tiem-nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(23, 35, 59, 0.08);
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(12px);
+}
+
+.tiem-nav-inner { min-height: 64px; display: flex; align-items: center; justify-content: space-between; padding: 0 1.5rem; }
+.tiem-wordmark { color: #145da0; font: 700 1.25rem 'Google Sans', sans-serif; letter-spacing: .06em; }
+.tiem-nav-links { display: flex; gap: 1.5rem; }
+.tiem-nav-links a { color: #42516b; font-size: .92rem; font-weight: 600; }
+.tiem-nav-links a:hover { color: #145da0; }
+
+.tiem-hero { position: relative; overflow: hidden; background: radial-gradient(circle at 80% 10%, #dff2f3 0, transparent 30%), linear-gradient(180deg, #f6fbff 0%, #fff 75%); }
+.tiem-hero::before { content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .3; background-image: linear-gradient(rgba(20,93,160,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(20,93,160,.08) 1px, transparent 1px); background-size: 42px 42px; mask-image: linear-gradient(to bottom, black, transparent 65%); }
+.tiem-hero .hero-body { position: relative; padding: 5.5rem 1.5rem 4rem; }
+.tiem-kicker { display: inline-block; margin-bottom: 1.25rem; padding: .45rem .9rem; border: 1px solid #b9d9e8; border-radius: 999px; color: #145da0; background: rgba(255,255,255,.75); font-size: .78rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.publication-title { margin-bottom: .75rem !important; font-size: clamp(4rem, 10vw, 7.5rem) !important; letter-spacing: -.06em; line-height: .9 !important; }
+.tiem-subtitle { max-width: 900px; margin: 0 auto 1rem !important; color: #1b2b48; line-height: 1.35; }
+.tiem-lead { max-width: 680px; margin: 0 auto 1.5rem; color: #65718a; font-size: 1.1rem; }
+.tiem-actions { margin: 1.5rem 0 3rem; }
+.tiem-button-light { border-color: #b9c9d8 !important; color: #263a55 !important; background: rgba(255,255,255,.85) !important; }
+.tiem-hero-visual { max-width: 900px; margin: 0 auto; padding: .8rem; border: 1px solid rgba(20,93,160,.15); border-radius: 18px; background: rgba(255,255,255,.84); box-shadow: 0 24px 70px rgba(27,65,98,.14); }
+.tiem-hero-visual img { display: block; width: 100%; border-radius: 11px; }
+
+.tiem-section-label { margin-bottom: .65rem; color: #16858d; font-size: .75rem; font-weight: 800; letter-spacing: .18em; text-align: center; text-transform: uppercase; }
+.tiem-section-label.is-left { text-align: left; }
+.tiem-copy { color: #42516b; line-height: 1.8; }
+.tiem-light-section { background: #f5f8fb; }
+.tiem-section-intro { max-width: 680px; margin: 0 auto 2.5rem !important; color: #65718a; }
+.tiem-feature-grid { margin-bottom: 2.5rem !important; }
+.tiem-card { height: 100%; padding: 1.75rem; border: 1px solid #dae3eb; border-radius: 14px; background: #fff; box-shadow: 0 8px 28px rgba(30,55,80,.06); }
+.tiem-card-index { display: block; margin-bottom: 1.5rem; color: #16858d; font: 700 .8rem 'Google Sans', sans-serif; letter-spacing: .14em; }
+.tiem-card p { color: #5a6980; line-height: 1.65; }
+.tiem-wide-figure { margin: 3rem 0 1rem; }
+.tiem-wide-figure img { display: block; width: 100%; border: 1px solid #dce5ed; border-radius: 12px; background: #fff; box-shadow: 0 14px 44px rgba(26,53,87,.09); }
+.tiem-wide-figure figcaption { max-width: 900px; margin: 1rem auto 0; color: #66748a; font-size: .93rem; line-height: 1.55; text-align: center; }
+.tiem-datasets { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.tiem-datasets span { padding: .6rem 1.05rem; border: 1px solid #b9d9e8; border-radius: 999px; color: #145da0; background: #f1faff; font-weight: 700; }
+
+.tiem-dark-section { background: #14243c; }
+.tiem-muted { color: #aebcd0; line-height: 1.65; }
+.tiem-contact { margin-top: 1.5rem; color: #d9e3ef; }
+.tiem-contact a { color: #73d6d7; }
+.tiem-bibtex { margin: 0; border: 1px solid #30445f; border-radius: 12px; color: #d8e6f4; background: #0d1a2d; white-space: pre-wrap; }
+.tiem-footer { padding: 2.5rem 1.5rem; color: #66748a; background: #fff; }
+
+@media (max-width: 768px) {
+  .tiem-nav-links { display: none; }
+  .tiem-hero .hero-body { padding-top: 4rem; }
+  .publication-title { font-size: 4.4rem !important; }
+  .tiem-subtitle { font-size: 1.25rem !important; }
+  .tiem-wide-figure { margin-top: 2rem; }
 }
 
 
@@ -171,5 +232,4 @@ body {
 .tiem-accent {
   color: #1666a8;
 }
-
 
