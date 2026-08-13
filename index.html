@@ -69,8 +69,45 @@
             </span>
           </div>
 
-          <div class="tiem-hero-visual">
-            <img src="static/images/figure1.jpeg" alt="TIEM framework combining the Event-Evidence Hypergraph, evidence-experience fusion reasoning, and Causal Skill Memory">
+        </div>
+      </div>
+    </section>
+
+    <section class="hero is-small tiem-carousel-section" aria-label="TIEM figures">
+      <div class="hero-body">
+        <div class="container">
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item">
+              <img src="static/images/figure1.jpeg" alt="TIEM framework combining the Event-Evidence Hypergraph, fusion reasoning, and Causal Skill Memory">
+              <h2 class="subtitle has-text-centered">
+                <strong>TIEM framework.</strong> A catalyst query is anchored by its target stock, catalyst type,
+                and decision time. EEH retrieves temporally valid evidence, HEFR builds the reasoning context,
+                and CSM supplies reusable causal skills.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/figure2.jpeg" alt="Comparison between direct prompting, memory augmentation, retrieval-augmented generation, and TIEM">
+              <h2 class="subtitle has-text-centered">
+                <strong>Why TIEM?</strong> Direct prompting can rely on unsupported recall, memory augmentation may
+                introduce hindsight, and conventional RAG can retrieve temporally invalid documents. TIEM jointly
+                reasons over structured evidence and experience.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/figure3.jpeg" alt="TIEM benchmark suite and contamination inspection protocol">
+              <h2 class="subtitle has-text-centered">
+                <strong>Benchmark and protocol.</strong> Evaluation spans Astock, FinPURE, CMIN-US, EDT, and CSMD,
+                with a Name–Date Probe and the three-gate Contamination Inspection Protocol for auditing shortcut
+                and contamination risks.
+              </h2>
+            </div>
+            <div class="item">
+              <img src="static/images/figure4.jpeg" alt="Point-in-time catalyst-outcome forecasting task">
+              <h2 class="subtitle has-text-centered">
+                <strong>Forecasting task.</strong> Given a catalyst and only the evidence available by decision time
+                T, the system predicts the direction of the realized return over the benchmark-specific horizon.
+              </h2>
+            </div>
           </div>
         </div>
       </div>
@@ -188,6 +225,10 @@
     </div>
   </footer>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </body>
 </html>
