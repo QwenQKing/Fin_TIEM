@@ -3,9 +3,9 @@
 <div align="center">
 
 [![arXiv](https://img.shields.io/badge/arXiv-2511.01016-b31b1b.svg)]()
-[![Homepage](https://img.shields.io/badge/Homepage-TIEM-black.svg)](https://qwenqking.github.io/TIEM/)
-[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-blue.svg?logo=huggingface)](https://huggingface.co/datasets/QwenQKing/TIEM-databases)
-[![HF Models](https://img.shields.io/badge/Dataset-HuggingFace-orange.svg?logo=huggingface)](https://huggingface.co/datasets/QwenQKing/TIEM-dataset)
+[![Homepage](https://img.shields.io/badge/Homepage-Fin__TIEM-black.svg)](https://qwenqking.github.io/Fin_TIEM/)
+[![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-blue.svg?logo=huggingface)]()
+[![HF Models](https://img.shields.io/badge/Dataset-HuggingFace-orange.svg?logo=huggingface)]()
 
 
 
