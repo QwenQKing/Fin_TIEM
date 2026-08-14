@@ -146,7 +146,15 @@ TIEM is an academic research project evaluated offline. Its outputs are not inve
 If you find this work is helpful for your research, please cite:
 
 ```bibtex
-
+@misc{liu2026tiemtemporalintegrationhypergraph,
+      title={TIEM: Temporal Integration of Hypergraph Evidence and Skill Memory for Event-Driven Financial Forecasting}, 
+      author={Wenjin Liu and Shen Pang and Chenxi Wang and Tiesunlong Shen and Zhe Cui and Xiaobao Wu and Anh Tuan Luu and Haoran Luo},
+      year={2026},
+      eprint={2608.13024},
+      archivePrefix={arXiv},
+      primaryClass={cs.CE},
+      url={https://arxiv.org/abs/2608.13024}, 
+}
 ```
 
 For further questions, please contact: wenjinliu23@outlook.com.
