@@ -25,18 +25,6 @@
   <link rel="stylesheet" href="static/css/index.css">
 </head>
 <body>
-  <nav class="tiem-nav" aria-label="Main navigation">
-    <div class="container is-max-desktop tiem-nav-inner">
-      <a class="tiem-wordmark" href="#top" aria-label="TIEM homepage">TIEM</a>
-      <div class="tiem-nav-links">
-        <a href="#abstract">Abstract</a>
-        <a href="#method">Method</a>
-        <a href="#benchmarks">Benchmarks</a>
-        <a href="#citation">Citation</a>
-      </div>
-    </div>
-  </nav>
-
   <main id="top">
     <section class="hero tiem-hero">
       <div class="hero-body">
@@ -153,24 +141,24 @@
       </div>
     </section>
 
-    <section class="section" id="abstract">
+    <section class="section hero is-light" id="abstract">
       <div class="container is-max-desktop">
-        <div class="columns is-centered">
+        <div class="columns is-centered has-text-centered">
           <div class="column is-four-fifths">
-            <p class="tiem-section-label">Overview</p>
-            <h2 class="title is-2 has-text-centered">Abstract</h2>
-            <div class="content is-size-5 has-text-justified tiem-copy">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
               <p>
-                <strong>TIEM</strong> is a point-in-time-audited framework for event-driven financial forecasting.
-                It combines timestamp-filtered <strong>Event-Evidence Hypergraph (EEH)</strong> retrieval,
-                provenance-tagged <strong>Causal Skill Memory (CSM)</strong>, and
-                <strong>Heterogeneous Evidence-Experience Fusion Reasoning (HEFR)</strong> to predict catalyst
-                outcomes without using information unavailable at the decision time.
-              </p>
-              <p>
-                A catalyst query is anchored by its target stock, catalyst type, and decision time. EEH retrieves
-                only past evidence, HEFR builds a unified reasoning context, and CSM supplies reusable causal skills
-                learned from already realized outcomes.
+                Event-driven catalyst-outcome forecasting increasingly uses retrieval- and memory-augmented large
+                language model agents for prediction. However, training-data contamination and temporal leakage can
+                create an <em>Evidence Chasm</em> between reported accuracy and true predictive ability. We propose
+                <strong>TIEM</strong>, a timestamp-gated framework with three coordinated components: an
+                <strong>Event-Evidence Hypergraph (EEH)</strong> for timestamp-filtered multi-tier retrieval; a
+                <strong>Case-based Skill Memory (CSM)</strong> for source-tagged temporal skills; and
+                <strong>Heterogeneous Evidence-Experience Fusion Reasoning (HEFR)</strong> for evidence-experience
+                fusion and prediction. We also introduce <strong>FinPURE</strong>, a recent-period A-share holdout
+                benchmark, and use a Name-Date Probe to assess per-model name-date sensitivity rather than assuming
+                training cutoffs. Results on five financial forecasting benchmarks show TIEM outperforms current
+                baselines.
               </p>
             </div>
           </div>
@@ -178,82 +166,24 @@
       </div>
     </section>
 
-    <section class="section tiem-light-section" id="method">
-      <div class="container is-max-desktop">
-        <p class="tiem-section-label">How it works</p>
-        <h2 class="title is-2 has-text-centered">Evidence meets experience</h2>
-        <p class="subtitle has-text-centered tiem-section-intro">
-          TIEM makes every forecast temporally valid, traceable, and reusable.
-        </p>
-        <div class="columns is-multiline tiem-feature-grid">
-          <div class="column is-one-third">
-            <article class="tiem-card">
-              <span class="tiem-card-index">01</span>
-              <h3 class="title is-5">Event-Evidence Hypergraph</h3>
-              <p>Organizes focal events and their temporal, entity, and semantic relations for structured retrieval.</p>
-            </article>
-          </div>
-          <div class="column is-one-third">
-            <article class="tiem-card">
-              <span class="tiem-card-index">02</span>
-              <h3 class="title is-5">Fusion Reasoning</h3>
-              <p>Validates retrieved skills against current evidence before producing an auditable direction forecast.</p>
-            </article>
-          </div>
-          <div class="column is-one-third">
-            <article class="tiem-card">
-              <span class="tiem-card-index">03</span>
-              <h3 class="title is-5">Causal Skill Memory</h3>
-              <p>Stores provenance-aware forecasting experience only after outcomes are revealed.</p>
-            </article>
-          </div>
+    <section class="hero is-small is-light" id="paper">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title">Paper</h2>
+          <iframe class="tiem-paper-frame" src="static/pdfs/TIEM_ACL.pdf" width="100%" height="550" title="TIEM paper PDF"></iframe>
         </div>
-
-        <figure class="tiem-wide-figure">
-          <img src="static/images/figure2.jpeg" alt="Comparison of direct prompting, memory augmentation, retrieval-augmented generation, and TIEM">
-          <figcaption>TIEM jointly reasons over structured evidence and experience while guarding against unsupported recall, hindsight, and temporally invalid retrieval.</figcaption>
-        </figure>
       </div>
     </section>
 
-    <section class="section" id="benchmarks">
-      <div class="container is-max-desktop">
-        <p class="tiem-section-label">Evaluation</p>
-        <h2 class="title is-2 has-text-centered">Five forecasting benchmarks</h2>
-        <p class="subtitle has-text-centered tiem-section-intro">
-          In-distribution, recent-period, cross-market, and temporal out-of-distribution settings.
-        </p>
-        <div class="tiem-datasets" aria-label="Evaluated datasets">
-          <span>Astock</span><span>FinPURE</span><span>CMIN-US</span><span>EDT</span><span>CSMD</span>
-        </div>
-        <figure class="tiem-wide-figure">
-          <img src="static/images/figure3.jpeg" alt="TIEM benchmark suite and contamination inspection protocol">
-          <figcaption>The Name–Date Probe and three-gate Contamination Inspection Protocol audit shortcut and contamination risks.</figcaption>
-        </figure>
-        <figure class="tiem-wide-figure">
-          <img src="static/images/figure4.jpeg" alt="Point-in-time catalyst-outcome forecasting task">
-          <figcaption>Given a catalyst and only the evidence available by decision time T, TIEM predicts the direction of the realized return over the benchmark-specific horizon.</figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <section class="section tiem-dark-section" id="citation">
-      <div class="container is-max-desktop">
-        <div class="columns is-variable is-8">
-          <div class="column is-one-third">
-            <p class="tiem-section-label is-left">Research artifact</p>
-            <h2 class="title is-2 has-text-white">Citation</h2>
-            <p class="tiem-muted">BibTeX metadata will be added when the paper record is publicly available.</p>
-            <p class="tiem-contact">Questions: <a href="mailto:wenjinliu23@outlook.com">wenjinliu23@outlook.com</a></p>
-          </div>
-          <div class="column">
-            <pre class="tiem-bibtex"><code>@misc{tiem,
-  title  = {TIEM: Temporal Integration of Hypergraph Evidence and
-            Skill Memory for Event-Driven Financial Forecasting},
-  note   = {Project page: https://qwenqking.github.io/Fin_TIEM/}
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{liu2026tiem,
+  title  = {TIEM: Temporal Integration of Hypergraph Evidence and Skill Memory for Event-Driven Financial Forecasting},
+  author = {Wenjin Liu and Shen Pang and Tiesunlong Shen and Zhe Cui and Xiaobao Wu and Anh Tuan Luu and Haoran Luo},
+  year   = {2026},
+  url    = {https://github.com/QwenQKing/Fin_TIEM}
 }</code></pre>
-          </div>
-        </div>
       </div>
     </section>
   </main>
