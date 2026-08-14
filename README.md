@@ -159,6 +159,4 @@ If you find this work is helpful for your research, please cite:
 
 For further questions, please contact: wenjinliu23@outlook.com.
 
-## Acknowledgement
 
-This repo benefits from  . Thanks for their wonderful works.
