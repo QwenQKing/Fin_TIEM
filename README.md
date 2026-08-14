@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![arXiv](https://img.shields.io/badge/arXiv-2511.01016-b31b1b.svg)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2511.01016-b31b1b.svg)](http://arxiv.org/abs/2608.13024)
 [![Homepage](https://img.shields.io/badge/Homepage-Fin__TIEM-black.svg)](https://qwenqking.github.io/Fin_TIEM/)
 [![Dataset](https://img.shields.io/badge/Dataset-HuggingFace-blue.svg?logo=huggingface)](https://huggingface.co/datasets/QwenQKing/TIEM-dataset)
 [![Databases](https://img.shields.io/badge/Databases-HuggingFace-orange.svg?logo=huggingface)](https://huggingface.co/datasets/QwenQKing/TIEM-databases)
